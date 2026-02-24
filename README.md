@@ -1,6 +1,6 @@
 # GUI Data Extraction Tool
 
-A PyQt5-based GUI application for extracting and analyzing metadata from research papers using BibTeX citations and structured research question data.
+A PyQt6-based GUI application for extracting and analyzing metadata from research papers using BibTeX citations and structured research question data.
 
 ## Features
 
