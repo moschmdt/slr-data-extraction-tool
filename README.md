@@ -6,7 +6,6 @@ A PyQt6-based GUI application for extracting and analyzing metadata from researc
 
 - **Paper-Based Workflow**: Process papers one at a time with automatic progression to unprocessed papers
 - **Multi-Select Interface**: Answer structured research questions with multiple-choice options for each paper
-- **Citation Management**: Reads BibTeX files with automatic extraction of title, authors, year, and DOI
 - **Flexible Data Input**: Support for custom text input when "Other" options are selected
 - **Bibliography Display**: View all loaded citation entries in an organized list
 - **Data Export**:
