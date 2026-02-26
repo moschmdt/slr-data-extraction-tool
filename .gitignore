@@ -1,7 +1,6 @@
 # CUSOM
 
 .session.json
-export.json
 .python-version
 uv.lock
 
