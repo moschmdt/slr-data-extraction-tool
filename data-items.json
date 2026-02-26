@@ -1,6 +1,5 @@
 {
-    "General information":
-    {
+    "General information": {
         "Code available?": [
             "yes",
             "no",
@@ -10,7 +9,8 @@
             "maintained",
             "unmaintained",
             "deprecated",
-            "single-choice"
+            "Not applicable",
+            "single-choice",
         ],
         "License": [
             "MIT",
@@ -19,7 +19,8 @@
             "BSD",
             "No commercial use",
             "single-choice",
-            "Other"
+            "Other",
+            "Not applicable"
         ]
     },
     "Target platform (RQ1)": {
@@ -34,9 +35,9 @@
             "Manipulator (unspecified) => Use if not further specified",
             "Rectangular/cartesian robot",
             "Cylindrical robot",
-            "Polar/spherical robot",  
+            "Polar/spherical robot",
             "Pendular robot",
-            "Articulated robot", 
+            "Articulated robot",
             "SCARA robot",
             "Parallel robot manipulator",
             "Mobile robot (unspecified) => Use if not further specified",
@@ -89,13 +90,13 @@
             "Other",
             "Not applicable"
         ],
-        "Location":[
+        "Location": [
             "Laboratory",
             "Field",
             "Not applicable",
             "In the wild"
         ],
-        "Multi Agent System":[
+        "Multi Agent System": [
             "No, i.e. one human - one robot",
             "One human - multiple robots",
             "Multiple humans - one robot",
@@ -112,7 +113,6 @@
             "Not applicable",
             "Other"
         ],
-        
         "Control algorithm": [
             "BT",
             "BT (nav 2)",
@@ -128,7 +128,6 @@
             "Decision tree",
             "Other",
             "Not applicable"
-
         ],
         "Adaptation": [
             "Yes, autonomous adaptation",
