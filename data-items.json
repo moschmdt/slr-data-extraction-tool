@@ -10,7 +10,7 @@
             "unmaintained",
             "deprecated",
             "Not applicable",
-            "single-choice",
+            "single-choice"
         ],
         "License": [
             "MIT",
@@ -167,17 +167,24 @@
             "Perception",
             "Behaviour"
         ],
-        "Planning level scope": [
-            "Action level",
-            "Sequence level",
-            "Goal level",
-            "Policy level"
-        ],
         "Explanatory question": [
             "Why",
             "What",
             "How"
         ],
+        "Planning level scope": {
+            "options": [
+                "Action level",
+                "Sequence level",
+                "Goal level",
+                "Policy level"
+            ],
+            "mandatory_text_field": {
+                "enabled": true,
+                "label": "Key passage for categorization",
+                "placeholder": "Describe the key passage that informed this categorization..."
+            }
+        },
         "Presentation modality": [
             "Visualization",
             "Logs",

@@ -1,0 +1,10 @@
+[project]
+name = "slr-data-extraction-tool"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pyqt6==6.7.0",
+    "pyqt6-sip==13.6.0",
+]
