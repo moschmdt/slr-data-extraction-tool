@@ -1,0 +1,380 @@
+{
+  "K5YBJ5M2": {
+    "paper": {
+      "title": "Enhancing robotic grasp failure prediction using a pre-hoc explainability framework",
+      "authors": "C. Acun; A. Ashary; D.O. Popa; O. Nasraoui",
+      "year": "2024"
+    },
+    "excluded_from_full_text_review": false,
+    "exclusion_reason": "",
+    "responses": {
+      "General information": {
+        "Code available?": [
+          "no"
+        ],
+        "Project status": [
+          "Not applicable"
+        ],
+        "License": [
+          "Not applicable"
+        ]
+      },
+      "Target platform (RQ1)": {
+        "Deployment": [
+          "Robot simulation"
+        ],
+        "Robotic device": [
+          "Manipulator (unspecified) => Use if not further specified"
+        ],
+        "Simulation environment": [
+          "Gazebo"
+        ],
+        "Domain": [
+          "Underspecified"
+        ],
+        "Use case": [
+          "Manipulation"
+        ],
+        "Location": [
+          "Laboratory"
+        ],
+        "Multi Agent System": [
+          "No, i.e. one human - one robot"
+        ]
+      },
+      "Software characteristics (RQ2)": {
+        "Middleware": [
+          "ROS1"
+        ],
+        "Control algorithm": [
+          "Underspecified"
+        ],
+        "Adaptation": [
+          "None"
+        ],
+        "Goal of adaptation": [
+          "Not applicable"
+        ]
+      },
+      "Explanation structure (RQ3)": {
+        "Intrinsic vs. post-hoc": [
+          "Pre-hoc"
+        ],
+        "Generation technique": [
+          "Other: sparse logistic regression model"
+        ],
+        "Explained robot part": [
+          "Behaviour"
+        ],
+        "Planning level scope": [
+          "Policy level"
+        ],
+        "Explanatory question": [
+          "What"
+        ],
+        "Presentation modality": [
+          "Discussion needed: See fig. 4; might be shap. Is this a figure or a visualization?"
+        ]
+      },
+      "Stakeholder (RQ4)": {
+        "HRI Type": [
+          "Underspecified"
+        ],
+        "Motivation": [
+          "Underspecified"
+        ],
+        "Stakeholder type": [
+          "Underspecified"
+        ]
+      },
+      "Evaluation (RQ5)": {
+        "State of explainability": [
+          "Pseudo-code"
+        ],
+        "Type of evaluation": [
+          "Technical (Benchmark), Quantitative"
+        ],
+        "Evaluation metrics": [
+          "Other: Model fidelity"
+        ]
+      }
+    },
+    "mandatory_texts": {
+      "Explanation structure (RQ3)": {
+        "Planning level scope": "Global explanation from the Pre-hoc framework, showing that increased effort exerted in Joint 2 of Finger 3 contributes tremendously to producing grasp failure; Figure 4."
+      }
+    }
+  },
+  "3UCSHXYH": {
+    "paper": {
+      "title": "Improving HRI Through Robot Architecture Transparency",
+      "authors": "L. Hindemith; C.B. Wiebel-Herboth; H. Wersing; B. Wrede; A.-L. Vollmer",
+      "year": "2025"
+    },
+    "excluded_from_full_text_review": false,
+    "exclusion_reason": "",
+    "responses": {
+      "General information": {
+        "Code available?": [
+          "no"
+        ],
+        "Project status": [
+          "Not applicable"
+        ],
+        "License": [
+          "Not applicable"
+        ]
+      },
+      "Target platform (RQ1)": {
+        "Deployment": [
+          "Robot simulation"
+        ],
+        "Robotic device": [
+          "Mobile manipulator"
+        ],
+        "Simulation environment": [
+          "Gazebo"
+        ],
+        "Domain": [
+          "Consumer robot"
+        ],
+        "Use case": [
+          "Underspecified"
+        ],
+        "Location": [
+          "Field"
+        ],
+        "Multi Agent System": [
+          "No, i.e. one human - one robot"
+        ]
+      },
+      "Software characteristics (RQ2)": {
+        "Middleware": [
+          "ROS1"
+        ],
+        "Control algorithm": [
+          "Other: Rule-based"
+        ],
+        "Adaptation": [
+          "None"
+        ],
+        "Goal of adaptation": [
+          "Not applicable"
+        ]
+      },
+      "Explanation structure (RQ3)": {
+        "Intrinsic vs. post-hoc": [
+          "Underspecified"
+        ],
+        "Generation technique": [
+          "Underspecified"
+        ],
+        "Explained robot part": [
+          "Behaviour"
+        ],
+        "Planning level scope": [
+          "Underspecified"
+        ],
+        "Explanatory question": [
+          "Underspecified"
+        ],
+        "Presentation modality": [
+          "Visualization"
+        ]
+      },
+      "Stakeholder (RQ4)": {
+        "HRI Type": [
+          "Cooperation"
+        ],
+        "Motivation": [
+          "Transparency"
+        ],
+        "Stakeholder type": [
+          "Operator / End user (non-expert)"
+        ]
+      },
+      "Evaluation (RQ5)": {
+        "State of explainability": [
+          "Discussion needed: Implementation, but currenlty bocked by sanity checks."
+        ],
+        "Type of evaluation": [
+          "User study, Quantitative"
+        ],
+        "Evaluation metrics": [
+          "Other: Usability, Godspeed (Anthropomorphism, Likability, Perceived Intelligence)"
+        ]
+      }
+    },
+    "mandatory_texts": {
+      "Explanation structure (RQ3)": {
+        "Planning level scope": "underspecified"
+      }
+    }
+  },
+  "D2DZAIXP": {
+    "paper": {
+      "title": "Integrating Belief-Desire-Intention agents with large language models for reliable human\u2013robot interaction and explainable Artificial Intelligence",
+      "authors": "L. Frering; G. Steinbauer-Wagner; A. Holzinger",
+      "year": "2025"
+    },
+    "excluded_from_full_text_review": false,
+    "exclusion_reason": "",
+    "responses": {
+      "General information": {
+        "Code available?": [
+          "no"
+        ],
+        "Project status": [
+          "Not applicable"
+        ],
+        "License": [
+          "Not applicable"
+        ]
+      },
+      "Target platform (RQ1)": {
+        "Deployment": [
+          "Robot simulation",
+          "Real robot"
+        ],
+        "Robotic device": [
+          "Mobile robot (unspecified) => Use if not further specified"
+        ],
+        "Simulation environment": [
+          "Other: Gazebo, specifically Clearpath Husky Robot simulation and the Vizanti Visualizer ROS2 packages"
+        ],
+        "Domain": [
+          "Underspecified"
+        ],
+        "Use case": [
+          "Navigation"
+        ],
+        "Location": [
+          "Field"
+        ],
+        "Multi Agent System": [
+          "No, i.e. one human - one robot"
+        ]
+      },
+      "Software characteristics (RQ2)": {
+        "Middleware": [
+          "ROS2",
+          "Other: MQTT"
+        ],
+        "Control algorithm": [
+          "BDI Agent"
+        ],
+        "Adaptation": [
+          "None"
+        ],
+        "Goal of adaptation": [
+          "Not applicable"
+        ]
+      },
+      "Explanation structure (RQ3)": {
+        "Intrinsic vs. post-hoc": [
+          "Post-hoc"
+        ],
+        "Generation technique": [
+          "LLM-based"
+        ],
+        "Explained robot part": [
+          "Behaviour"
+        ],
+        "Explanatory question": [
+          "Underspecified"
+        ],
+        "Planning level scope": [
+          "Action level"
+        ],
+        "Presentation modality": [
+          "Text"
+        ]
+      },
+      "Stakeholder (RQ4)": {
+        "HRI Type": [
+          "Human supervision"
+        ],
+        "Motivation": [
+          "Transparency"
+        ],
+        "Stakeholder type": [
+          "Operator / End user (non-expert)"
+        ]
+      },
+      "Evaluation (RQ5)": {
+        "State of explainability": [
+          "Pseudo-code"
+        ],
+        "Type of evaluation": [
+          "Technical (Benchmark), Quantitative",
+          "Technical (Benchmark), Qualitative"
+        ],
+        "Evaluation metrics": [
+          "Accuracy of the explanation"
+        ]
+      }
+    },
+    "toggle_states": {
+      "Stakeholder (RQ4)": {
+        "Stakeholder type": {
+          "enabled": true,
+          "text": ""
+        }
+      }
+    },
+    "mandatory_texts": {
+      "Explanation structure (RQ3)": {
+        "Planning level scope": "User: \u2018\u2018Go to (2,2)\u2019\u2019 System: \u2018\u2018Impossible, there is a forbidden area there.\u2019\u2019 User: \u2018\u2018Are you sure there is a forbidden area there?\u2019\u2019  System: \u2018\u2018According to the initial beliefs of the BDI agent, there is indeed a forbidden area at coordinates (2,2) with a radius of 0.5 meters. This is verified by the line \u2018forbidden_area(2,2,0.5).\u2018 in the initial beliefs. Thus, the system correctly identified that moving the robot to (2,2) was not possible due to proximity to this forbidden area.\u2019\u2019"
+      }
+    }
+  },
+  "RDC6P8JB": {
+    "paper": {
+      "title": "Towards trustworthy and explainable socially assistive robots: a cognitive architecture for dietary guidance",
+      "authors": "L. D\u2019Arco; L. Raggioli; G. Randazzo; G. De Gasperis; A. Chella; S. Costantini; S. Rossi; I. Infantino; V. Seidita",
+      "year": "2025"
+    },
+    "excluded_from_full_text_review": false,
+    "exclusion_reason": "",
+    "responses": {
+      "General information": {
+        "Code available?": [],
+        "Project status": [],
+        "License": []
+      },
+      "Target platform (RQ1)": {
+        "Deployment": [],
+        "Robotic device": [],
+        "Simulation environment": [],
+        "Domain": [],
+        "Use case": [],
+        "Location": [],
+        "Multi Agent System": []
+      },
+      "Software characteristics (RQ2)": {
+        "Middleware": [],
+        "Control algorithm": [],
+        "Adaptation": [],
+        "Goal of adaptation": []
+      },
+      "Explanation structure (RQ3)": {
+        "Intrinsic vs. post-hoc": [],
+        "Generation technique": [],
+        "Explained robot part": [],
+        "Explanatory question": [],
+        "Planning level scope": [],
+        "Presentation modality": []
+      },
+      "Stakeholder (RQ4)": {
+        "HRI Type": [],
+        "Motivation": [],
+        "Stakeholder type": []
+      },
+      "Evaluation (RQ5)": {
+        "State of explainability": [],
+        "Type of evaluation": [],
+        "Evaluation metrics": []
+      }
+    }
+  }
+}

@@ -2266,7 +2266,7 @@ def main() -> None:
     """
     # Define the user performing the data extraction
     # Valid values: Moritz, Andreas, Stina, Shu, Amar, Tobias
-    user: str = "Enter name here"
+    user: str = "Moritz"
 
     app = QApplication(sys.argv)
     window = DataExtractionGUI(user=user)
