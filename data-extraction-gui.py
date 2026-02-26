@@ -166,6 +166,8 @@ class DataExtractionGUI(QMainWindow):
         self.radio_button_groups: Dict[str, QButtonGroup] = {}
         self.comboboxes: Dict[str, QComboBox] = {}
         self.discussion_text_inputs: Dict[str, QLineEdit] = {}
+        self.discussion_containers: Dict[str, QFrame] = {}
+        self.discussion_texts: Dict[str, str] = {}
         self.toggle_buttons: Dict[str, QCheckBox] = (
             {}
         )  # Toggle buttons for special options
@@ -634,6 +636,7 @@ class DataExtractionGUI(QMainWindow):
         self.radio_button_groups.clear()
         self.comboboxes.clear()
         self.discussion_text_inputs.clear()
+        self.discussion_containers.clear()
         self.toggle_buttons.clear()
         self.toggle_line_edits.clear()
         self.mandatory_text_inputs.clear()
@@ -759,7 +762,7 @@ class DataExtractionGUI(QMainWindow):
                         discussion_key = (
                             f"{entry_key}_{question_key}_{attribute}_discussion"
                         )
-                        # Store in a temp structure (will be set when widgets are created)
+                        # Store in state (will be applied when widgets are created)
                         if (
                             attribute
                             not in self.selected_Other_text[entry_key][question_key]
@@ -767,10 +770,7 @@ class DataExtractionGUI(QMainWindow):
                             self.selected_Other_text[entry_key][question_key][
                                 attribute
                             ] = ""
-                        # Store discussion text with a special marker
-                        if not hasattr(self, "_discussion_texts"):
-                            self._discussion_texts = {}
-                        self._discussion_texts[discussion_key] = discussion_text
+                        self.discussion_texts[discussion_key] = discussion_text
                     else:
                         self.selected_values[entry_key][question_key][attribute].append(
                             selection
@@ -1230,15 +1230,13 @@ class DataExtractionGUI(QMainWindow):
             if "Discussion needed" in selections:
                 discussion_key = f"{entry_key}_{question_key}_{attribute}_discussion"
                 if discussion_key in self.discussion_text_inputs:
-                    # Check if we have stored discussion text
-                    if (
-                        hasattr(self, "_discussion_texts")
-                        and discussion_key in self._discussion_texts
-                    ):
+                    self._set_discussion_field_state(
+                        entry_key, question_key, attribute, True, clear_text=False
+                    )
+                    if discussion_key in self.discussion_texts:
                         self.discussion_text_inputs[discussion_key].setText(
-                            self._discussion_texts[discussion_key]
+                            self.discussion_texts[discussion_key]
                         )
-                    self.discussion_text_inputs[discussion_key].setEnabled(True)
 
             # Restore toggle state and its text if present
             toggle_key = f"{entry_key}_{question_key}_{attribute}_toggle"
@@ -1454,6 +1452,12 @@ class DataExtractionGUI(QMainWindow):
         # Add the value
         self.selected_values[entry_key][question_key][attribute].append(selected_text)
 
+        # Enable discussion input if "Discussion needed" was selected
+        if selected_text == "Discussion needed":
+            self._set_discussion_field_state(
+                entry_key, question_key, attribute, True, clear_text=False
+            )
+
         # Update the UI to show selected values
         self._update_multiple_selection_display(entry_key, question_key, attribute)
 
@@ -1569,6 +1573,12 @@ class DataExtractionGUI(QMainWindow):
         ):
 
             self.selected_values[entry_key][question_key][attribute].remove(value)
+
+            if value == "Discussion needed":
+                self._set_discussion_field_state(
+                    entry_key, question_key, attribute, False, clear_text=True
+                )
+
             self._update_multiple_selection_display(entry_key, question_key, attribute)
 
     def _create_radio_buttons(
@@ -1694,12 +1704,46 @@ class DataExtractionGUI(QMainWindow):
             )
         )
         self.discussion_text_inputs[discussion_key] = discussion_input
+        self.discussion_containers[discussion_key] = discussion_frame
         discussion_layout.addWidget(discussion_input)
 
         discussion_frame.setLayout(discussion_layout)
+        discussion_frame.setVisible(False)
         layout.addSpacing(10)  # Add spacing before discussion field
         layout.addWidget(discussion_frame)
         layout.addSpacing(10)  # Add spacing after discussion field
+
+    def _set_discussion_field_state(
+        self,
+        entry_key: str,
+        question_key: str,
+        attribute: str,
+        visible: bool,
+        clear_text: bool,
+    ) -> None:
+        """Show/hide and enable/disable the discussion UI for one attribute."""
+        discussion_key = f"{entry_key}_{question_key}_{attribute}_discussion"
+
+        if discussion_key in self.discussion_containers:
+            self.discussion_containers[discussion_key].setVisible(visible)
+
+        if discussion_key not in self.discussion_text_inputs:
+            return
+
+        discussion_input = self.discussion_text_inputs[discussion_key]
+        discussion_input.setEnabled(visible)
+
+        if visible:
+            discussion_input.setStyleSheet(
+                "QLineEdit { background-color: white; border: 1px solid #ff9800; border-radius: 3px; padding: 5px; font-size: 10pt; color: #333333; }"
+            )
+        else:
+            discussion_input.setStyleSheet(
+                "QLineEdit { background-color: #f5f5f5; border: 1px solid #d0d0d0; border-radius: 3px; padding: 5px; font-size: 10pt; color: #999999; }"
+            )
+            if clear_text:
+                discussion_input.clear()
+                self.discussion_texts[discussion_key] = ""
 
     def on_checkbox_changed(
         self, entry_key: str, question_key: str, attribute: str, option: str, state: int
@@ -1740,19 +1784,13 @@ class DataExtractionGUI(QMainWindow):
 
         # Enable/disable text input for "Discussion needed" option
         if option == "Discussion needed":
-            discussion_key = f"{entry_key}_{question_key}_{attribute}_discussion"
-            if discussion_key in self.discussion_text_inputs:
-                if state == 2:  # checked
-                    self.discussion_text_inputs[discussion_key].setEnabled(True)
-                    self.discussion_text_inputs[discussion_key].setStyleSheet(
-                        "QLineEdit { background-color: white; border: 1px solid #ff9800; border-radius: 3px; padding: 5px; font-size: 10pt; color: #333333; }"
-                    )
-                else:
-                    self.discussion_text_inputs[discussion_key].setEnabled(False)
-                    self.discussion_text_inputs[discussion_key].setStyleSheet(
-                        "QLineEdit { background-color: #f5f5f5; border: 1px solid #d0d0d0; border-radius: 3px; padding: 5px; font-size: 10pt; color: #999999; }"
-                    )
-                    self.discussion_text_inputs[discussion_key].clear()
+            self._set_discussion_field_state(
+                entry_key,
+                question_key,
+                attribute,
+                state == 2,
+                clear_text=state != 2,
+            )
 
     def on_radio_button_changed(
         self,
@@ -1794,17 +1832,13 @@ class DataExtractionGUI(QMainWindow):
             # Enable/disable discussion text field if this is "Discussion needed"
             discussion_key = f"{entry_key}_{question_key}_{attribute}_discussion"
             if discussion_key in self.discussion_text_inputs:
-                if option == "Discussion needed":
-                    self.discussion_text_inputs[discussion_key].setEnabled(True)
-                    self.discussion_text_inputs[discussion_key].setStyleSheet(
-                        "QLineEdit { background-color: white; border: 1px solid #ff9800; border-radius: 3px; padding: 5px; font-size: 10pt; color: #333333; }"
-                    )
-                else:
-                    self.discussion_text_inputs[discussion_key].setEnabled(False)
-                    self.discussion_text_inputs[discussion_key].setStyleSheet(
-                        "QLineEdit { background-color: #f5f5f5; border: 1px solid #d0d0d0; border-radius: 3px; padding: 5px; font-size: 10pt; color: #999999; }"
-                    )
-                    self.discussion_text_inputs[discussion_key].clear()
+                self._set_discussion_field_state(
+                    entry_key,
+                    question_key,
+                    attribute,
+                    option == "Discussion needed",
+                    clear_text=option != "Discussion needed",
+                )
 
     def on_dropdown_changed(
         self, entry_key: str, question_key: str, attribute: str, text: str
@@ -1840,17 +1874,13 @@ class DataExtractionGUI(QMainWindow):
             # Enable/disable discussion text field if this is "Discussion needed"
             discussion_key = f"{entry_key}_{question_key}_{attribute}_discussion"
             if discussion_key in self.discussion_text_inputs:
-                if text == "Discussion needed":
-                    self.discussion_text_inputs[discussion_key].setEnabled(True)
-                    self.discussion_text_inputs[discussion_key].setStyleSheet(
-                        "QLineEdit { background-color: white; border: 1px solid #ff9800; border-radius: 3px; padding: 5px; font-size: 10pt; color: #333333; }"
-                    )
-                else:
-                    self.discussion_text_inputs[discussion_key].setEnabled(False)
-                    self.discussion_text_inputs[discussion_key].setStyleSheet(
-                        "QLineEdit { background-color: #f5f5f5; border: 1px solid #d0d0d0; border-radius: 3px; padding: 5px; font-size: 10pt; color: #999999; }"
-                    )
-                    self.discussion_text_inputs[discussion_key].clear()
+                self._set_discussion_field_state(
+                    entry_key,
+                    question_key,
+                    attribute,
+                    text == "Discussion needed",
+                    clear_text=text != "Discussion needed",
+                )
         else:
             # Clear selection if placeholder is selected
             self.selected_values[entry_key][question_key][attribute] = []
@@ -1865,8 +1895,9 @@ class DataExtractionGUI(QMainWindow):
             # Disable discussion text field
             discussion_key = f"{entry_key}_{question_key}_{attribute}_discussion"
             if discussion_key in self.discussion_text_inputs:
-                self.discussion_text_inputs[discussion_key].setEnabled(False)
-                self.discussion_text_inputs[discussion_key].clear()
+                self._set_discussion_field_state(
+                    entry_key, question_key, attribute, False, clear_text=True
+                )
 
     def on_discussion_text_changed(
         self,
@@ -1885,9 +1916,7 @@ class DataExtractionGUI(QMainWindow):
             discussion_key (str): The discussion field key.
             text (str): The new text value.
         """
-        # Store the discussion text in the discussion_text_inputs widget for validation
-        # The actual validation happens in validate_all_required_fields
-        pass
+        self.discussion_texts[discussion_key] = text
 
     def on_Other_text_changed(
         self, entry_key: str, question_key: str, attribute: str, text: str
@@ -2088,15 +2117,18 @@ class DataExtractionGUI(QMainWindow):
                             discussion_key = (
                                 f"{entry_key}_{question_key}_{attribute}_discussion"
                             )
-                            if discussion_key in self.discussion_text_inputs:
+                            discussion_text = self.discussion_texts.get(discussion_key)
+                            if (
+                                discussion_text is None or discussion_text == ""
+                            ) and discussion_key in self.discussion_text_inputs:
                                 discussion_text = self.discussion_text_inputs[
                                     discussion_key
                                 ].text()
-                                if discussion_text:
-                                    selections.remove("Discussion needed")
-                                    selections.append(
-                                        f"Discussion needed: {discussion_text}"
-                                    )
+                            if discussion_text:
+                                selections.remove("Discussion needed")
+                                selections.append(
+                                    f"Discussion needed: {discussion_text}"
+                                )
 
                         output[entry_key]["responses"][question_key][
                             attribute
@@ -2165,6 +2197,11 @@ class DataExtractionGUI(QMainWindow):
         for discussion_input in self.discussion_text_inputs.values():
             discussion_input.clear()
             discussion_input.setEnabled(False)
+
+        for discussion_container in self.discussion_containers.values():
+            discussion_container.setVisible(False)
+
+        self.discussion_texts.clear()
 
         # Clear toggle buttons and their texts
         for toggle in self.toggle_buttons.values():
