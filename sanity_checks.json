@@ -1,62 +1,130 @@
 [
   {
-    "id": "code_unavailable_requires_pseudocode",
-    "when": {"source": "response", "question": "General information", "attribute": "Code available?", "equals": "no"},
-    "then": {"source": "response", "question": "Evaluation (RQ5)", "attribute": "State of explainability", "must_equal": "Pseudo-code"},
-    "message": "If code is not available (no), the state of explainability must be 'Pseudo-code'."
-  },
-  {
     "id": "code_available_requires_not_pseudocode",
-    "when": {"source": "response", "question": "General information", "attribute": "Code available?", "equals": "yes"},
-    "then": {"source": "response", "question": "Evaluation (RQ5)", "attribute": "State of explainability", "must_not_equal": "Pseudo-code"},
+    "when": {
+      "source": "response",
+      "question": "General information",
+      "attribute": "Code available?",
+      "equals": "yes"
+    },
+    "then": {
+      "source": "response",
+      "question": "Evaluation (RQ5)",
+      "attribute": "State of explainability",
+      "must_not_equal": "Pseudo-code"
+    },
     "message": "If code is available (yes), the state of explainability must not be 'Pseudo-code'."
   },
   {
     "id": "evaluated_requires_not_no_evaluation",
-    "when": {"source": "response", "question": "Evaluation (RQ5)", "attribute": "State of explainability", "equals": "Evaluated"},
-    "then": {"source": "response", "question": "Evaluation (RQ5)", "attribute": "Type of evaluation", "must_not_equal": "None"},
+    "when": {
+      "source": "response",
+      "question": "Evaluation (RQ5)",
+      "attribute": "State of explainability",
+      "equals": "Evaluated"
+    },
+    "then": {
+      "source": "response",
+      "question": "Evaluation (RQ5)",
+      "attribute": "Type of evaluation",
+      "must_not_equal": "None"
+    },
     "message": "If state of explainability is 'Evaluated', the type of evaluation must not be 'None'."
   },
   {
     "id": "no_adaptation_requires_not_applicable_goal",
-    "when": {"source": "response", "question": "Software characteristics (RQ2)", "attribute": "Adaptation", "equals": "None"},
-    "then": {"source": "response", "question": "Software characteristics (RQ2)", "attribute": "Goal of adaptation", "must_equal": "Not applicable"},
+    "when": {
+      "source": "response",
+      "question": "Software characteristics (RQ2)",
+      "attribute": "Adaptation",
+      "equals": "None"
+    },
+    "then": {
+      "source": "response",
+      "question": "Software characteristics (RQ2)",
+      "attribute": "Goal of adaptation",
+      "must_equal": "Not applicable"
+    },
     "message": "If no adaptation is present, the goal of adaptation must be 'Not applicable'."
   },
   {
-    "id": "real_robot_requires_not_applicable_simulation",
-    "when": {"source": "response", "question": "Target platform (RQ1)", "attribute": "Deployment", "equals": "Real robot"},
-    "then": {"source": "response", "question": "Target platform (RQ1)", "attribute": "Simulation environment", "must_equal": "Not applicable"},
-    "message": "If deployment is 'Real robot', the simulation environment must be 'Not applicable'."
-  },
-  {
     "id": "robot_simulation_requires_not_applicable_simulation",
-    "when": {"source": "response", "question": "Target platform (RQ1)", "attribute": "Deployment", "equals": "Robot simulation"},
-    "then": {"source": "response", "question": "Target platform (RQ1)", "attribute": "Simulation environment", "must_not_equal": "Not applicable"},
+    "when": {
+      "source": "response",
+      "question": "Target platform (RQ1)",
+      "attribute": "Deployment",
+      "equals": "Robot simulation"
+    },
+    "then": {
+      "source": "response",
+      "question": "Target platform (RQ1)",
+      "attribute": "Simulation environment",
+      "must_not_equal": "Not applicable"
+    },
     "message": "If deployment is 'Robot simulation', the simulation environment must not be 'Not applicable'."
   },
   {
     "id": "other_simulation_requires_not_applicable_simulation",
-    "when": {"source": "response", "question": "Target platform (RQ1)", "attribute": "Deployment", "equals": "Other simulation"},
-    "then": {"source": "response", "question": "Target platform (RQ1)", "attribute": "Simulation environment", "must_not_equal": "Not applicable"},
+    "when": {
+      "source": "response",
+      "question": "Target platform (RQ1)",
+      "attribute": "Deployment",
+      "equals": "Other simulation"
+    },
+    "then": {
+      "source": "response",
+      "question": "Target platform (RQ1)",
+      "attribute": "Simulation environment",
+      "must_not_equal": "Not applicable"
+    },
     "message": "If deployment is 'Other simulation', the simulation environment must not be 'Not applicable'."
   },
   {
     "id": "robot_simulation_requires_not_in_wild_location",
-    "when": {"source": "response", "question": "Target platform (RQ1)", "attribute": "Deployment", "equals": "Robot simulation"},
-    "then": {"source": "response", "question": "Target platform (RQ1)", "attribute": "Location", "must_not_equal": "In the wild"},
+    "when": {
+      "source": "response",
+      "question": "Target platform (RQ1)",
+      "attribute": "Deployment",
+      "equals": "Robot simulation"
+    },
+    "then": {
+      "source": "response",
+      "question": "Target platform (RQ1)",
+      "attribute": "Location",
+      "must_not_equal": "In the wild"
+    },
     "message": "If deployment is 'Robot simulation', the location must not be 'In the wild'."
   },
   {
     "id": "other_simulation_requires_not_in_wild_location",
-    "when": {"source": "response", "question": "Target platform (RQ1)", "attribute": "Deployment", "equals": "Other simulation"},
-    "then": {"source": "response", "question": "Target platform (RQ1)", "attribute": "Location", "must_not_equal": "In the wild"},
+    "when": {
+      "source": "response",
+      "question": "Target platform (RQ1)",
+      "attribute": "Deployment",
+      "equals": "Other simulation"
+    },
+    "then": {
+      "source": "response",
+      "question": "Target platform (RQ1)",
+      "attribute": "Location",
+      "must_not_equal": "In the wild"
+    },
     "message": "If deployment is 'Other simulation', the location must not be 'In the wild'."
   },
   {
     "id": "use_case_not_applicable_requires_location_not_applicable",
-    "when": {"source": "response", "question": "Target platform (RQ1)", "attribute": "Use case", "equals": "Not applicable"},
-    "then": {"source": "response", "question": "Target platform (RQ1)", "attribute": "Location", "must_equal": "Not applicable"},
+    "when": {
+      "source": "response",
+      "question": "Target platform (RQ1)",
+      "attribute": "Use case",
+      "equals": "Not applicable"
+    },
+    "then": {
+      "source": "response",
+      "question": "Target platform (RQ1)",
+      "attribute": "Location",
+      "must_equal": "Not applicable"
+    },
     "message": "If use case is 'Not applicable', the location must be 'Not applicable'."
   }
 ]
