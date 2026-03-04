@@ -187,6 +187,7 @@
         },
         "Presentation modality": [
             "Visualization",
+            "Plot",
             "Logs",
             "Expressive motion",
             "Expressive lights",
@@ -248,7 +249,7 @@
             "Evaluated",
             "single-choice"
         ],
-        "Type of evaluation": [
+        "Type of explainability evaluation": [
             "None",
             "Technical (Benchmark), Quantitative",
             "Technical (Benchmark), Qualitative",
