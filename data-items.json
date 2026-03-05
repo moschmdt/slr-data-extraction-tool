@@ -21,6 +21,11 @@
             "single-choice",
             "Other",
             "Not applicable"
+        ],
+        "Additional information": [
+            "No additional information",
+            "Other",
+            "single-choice"
         ]
     },
     "Target platform (RQ1)": {
@@ -269,6 +274,7 @@
             "User behavior (performance)",
             "Accuracy of the explanation",
             "Curiosity",
+            "Not applicable",
             "Other"
         ]
     }
