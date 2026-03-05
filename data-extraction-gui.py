@@ -79,11 +79,19 @@ class PaperSelectionDialog(QDialog):
         self.paper_list = QListWidget()
         self.paper_list.setSelectionMode(QListWidget.SelectionMode.SingleSelection)
 
-        for paper_key, title, authors, year in self.finished_papers:
+        for (
+            paper_key,
+            title,
+            authors,
+            year,
+            has_open_discussion,
+        ) in self.finished_papers:
             item_text = (
                 f"{title}\n  Authors: {authors}\n  Year: {year}\n  Key: {paper_key}"
             )
             item = QListWidgetItem(item_text)
+            if has_open_discussion:
+                item.setForeground(Qt.GlobalColor.red)
             item.setData(
                 Qt.ItemDataRole.UserRole, paper_key
             )  # Store paper_key for retrieval
@@ -359,7 +367,8 @@ class DataExtractionGUI(QMainWindow):
         """Get list of papers that have been finished (have responses in export file).
 
         Returns:
-            List[tuple]: List of tuples (paper_key, title, authors, year) for finished papers.
+            List[tuple]: List of tuples (paper_key, title, authors, year, has_open_discussion)
+            for finished papers.
         """
         finished = []
         export_file = "export.json"
@@ -391,6 +400,20 @@ class DataExtractionGUI(QMainWindow):
                 if has_responses:
                     break
 
+            # Detect whether this paper has at least one open discussion entry
+            has_open_discussion = False
+            for question_responses in responses.values():
+                for selection_list in question_responses.values():
+                    if any(
+                        isinstance(selection, str)
+                        and selection.startswith("Discussion needed")
+                        for selection in selection_list
+                    ):
+                        has_open_discussion = True
+                        break
+                if has_open_discussion:
+                    break
+
             # Add to finished list if it has responses
             if has_responses or paper_data.get("excluded_from_full_text_review", False):
                 entry_data = self.papers.get(paper_key, {})
@@ -400,6 +423,7 @@ class DataExtractionGUI(QMainWindow):
                         entry_data.get("title", "Unknown"),
                         entry_data.get("authors", "Unknown"),
                         entry_data.get("year", "Unknown"),
+                        has_open_discussion,
                     )
                 )
 
