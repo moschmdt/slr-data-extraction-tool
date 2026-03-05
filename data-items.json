@@ -166,7 +166,8 @@
             "Rule-based",
             "Template-based",
             "LLM-based",
-            "Other"
+            "Other",
+            "Multiple"
         ],
         "Explained robot part": [
             "Perception",
