@@ -17,6 +17,9 @@
         ],
         "License": [
           "Not applicable"
+        ],
+        "Additional information": [
+          "Other: Smart Grasping Sandbox Simulation in Gazebo/ROS, Fidelity reflects the descriptive accuracy of our explanation method against the black-box classifier (from Paper: \"Definitions, methods, and applications in interpretable machine learning\")"
         ]
       },
       "Target platform (RQ1)": {
@@ -73,7 +76,7 @@
           "What"
         ],
         "Presentation modality": [
-          "Discussion needed: See fig. 4; might be shap. Is this a figure or a visualization?"
+          "Plot"
         ]
       },
       "Stakeholder (RQ4)": {
@@ -95,13 +98,16 @@
           "Technical (Benchmark), Quantitative"
         ],
         "Evaluation metrics": [
-          "Other: Model fidelity"
+          "Other: Model fidelity, Area under ROC Curve (AUC), "
+        ],
+        "Type of explainability evaluation": [
+          "Technical (Benchmark), Quantitative"
         ]
       }
     },
     "mandatory_texts": {
       "Explanation structure (RQ3)": {
-        "Planning level scope": "Global explanation from the Pre-hoc framework, showing that increased effort exerted in Joint 2 of Finger 3 contributes tremendously to producing grasp failure; Figure 4."
+        "Planning level scope": "Global explanation from the Pre-hoc framework, showing that increased effort exerted in Joint 2 of Finger 3 contributes tremendously to producing grasp failure; Figure 4.: \"[...] increased effort exerted in Joint 2 of Finger 3 contributes tremendously to producing grasp failure\""
       }
     }
   },
@@ -123,6 +129,9 @@
         ],
         "License": [
           "Not applicable"
+        ],
+        "Additional information": [
+          "Other: Propose the \"FAMILIAR \u2013 FunctionAl user Mental model by Increased LegIbility ARchitecture\": behavior-based architecture with only two components: perception and behavior guidance for execution"
         ]
       },
       "Target platform (RQ1)": {
@@ -153,7 +162,7 @@
           "ROS1"
         ],
         "Control algorithm": [
-          "Other: Rule-based"
+          "Other: Rule-based, self written architecture. "
         ],
         "Adaptation": [
           "None"
@@ -195,13 +204,16 @@
       },
       "Evaluation (RQ5)": {
         "State of explainability": [
-          "Discussion needed: Implementation, but currenlty bocked by sanity checks."
+          "Implementation"
         ],
         "Type of evaluation": [
           "User study, Quantitative"
         ],
         "Evaluation metrics": [
           "Other: Usability, Godspeed (Anthropomorphism, Likability, Perceived Intelligence)"
+        ],
+        "Type of explainability evaluation": [
+          "User study, Qualitative"
         ]
       }
     },
@@ -229,6 +241,9 @@
         ],
         "License": [
           "Not applicable"
+        ],
+        "Additional information": [
+          "No additional information"
         ]
       },
       "Target platform (RQ1)": {
@@ -310,7 +325,10 @@
           "Technical (Benchmark), Qualitative"
         ],
         "Evaluation metrics": [
-          "Accuracy of the explanation"
+          "Underspecified"
+        ],
+        "Type of explainability evaluation": [
+          "Discussion needed: They evaluated three examples of the BDI agent & LLM interacting with a user and call for more evaluation in the future. This is not really a technical benchmark nor a user study. I would suggest something like qualitative illustrative evaluation (by chatgpt)"
         ]
       }
     },
@@ -338,42 +356,222 @@
     "exclusion_reason": "",
     "responses": {
       "General information": {
-        "Code available?": [],
-        "Project status": [],
-        "License": []
+        "Code available?": [
+          "no"
+        ],
+        "Project status": [
+          "Not applicable"
+        ],
+        "License": [
+          "Not applicable"
+        ],
+        "Additional information": [
+          "No additional information"
+        ]
       },
       "Target platform (RQ1)": {
-        "Deployment": [],
-        "Robotic device": [],
-        "Simulation environment": [],
-        "Domain": [],
-        "Use case": [],
-        "Location": [],
-        "Multi Agent System": []
+        "Deployment": [
+          "Underspecified"
+        ],
+        "Robotic device": [
+          "Underspecified"
+        ],
+        "Simulation environment": [
+          "Underspecified"
+        ],
+        "Domain": [
+          "Medical and healthcare"
+        ],
+        "Use case": [
+          "Other: dietrary adherence"
+        ],
+        "Location": [
+          "Underspecified"
+        ],
+        "Multi Agent System": [
+          "No, i.e. one human - one robot"
+        ]
       },
       "Software characteristics (RQ2)": {
-        "Middleware": [],
-        "Control algorithm": [],
-        "Adaptation": [],
-        "Goal of adaptation": []
+        "Middleware": [
+          "Underspecified"
+        ],
+        "Control algorithm": [
+          "Cognitive architecture"
+        ],
+        "Adaptation": [
+          "None"
+        ],
+        "Goal of adaptation": [
+          "Not applicable"
+        ]
       },
       "Explanation structure (RQ3)": {
-        "Intrinsic vs. post-hoc": [],
-        "Generation technique": [],
-        "Explained robot part": [],
-        "Explanatory question": [],
-        "Planning level scope": [],
-        "Presentation modality": []
+        "Intrinsic vs. post-hoc": [
+          "Intrinsic"
+        ],
+        "Generation technique": [
+          "LLM-based"
+        ],
+        "Explained robot part": [
+          "Behaviour"
+        ],
+        "Explanatory question": [
+          "Underspecified"
+        ],
+        "Planning level scope": [
+          "Goal level",
+          "Sequence level"
+        ],
+        "Presentation modality": [
+          "Text"
+        ]
       },
       "Stakeholder (RQ4)": {
-        "HRI Type": [],
-        "Motivation": [],
-        "Stakeholder type": []
+        "HRI Type": [
+          "Underspecified"
+        ],
+        "Motivation": [
+          "Trust (increase)"
+        ],
+        "Stakeholder type": [
+          "Operator / End user (non-expert)"
+        ]
       },
       "Evaluation (RQ5)": {
-        "State of explainability": [],
+        "State of explainability": [
+          "Pseudo-code"
+        ],
         "Type of evaluation": [],
-        "Evaluation metrics": []
+        "Evaluation metrics": [
+          "Underspecified"
+        ],
+        "Type of explainability evaluation": [
+          "Discussion needed: qualitative illustrative evaluation"
+        ]
+      }
+    },
+    "toggle_states": {
+      "Stakeholder (RQ4)": {
+        "Stakeholder type": {
+          "enabled": true,
+          "text": "Based on context of explanations"
+        }
+      }
+    },
+    "mandatory_texts": {
+      "Explanation structure (RQ3)": {
+        "Planning level scope": "\"You have a lactose and gluten intolerance. I have filtered out any recipes that contain dairy ingredients. After reviewing the options, I can suggest chicken nuggets or a winter salad, as it meets all of your preferences and dietary restrictions.\u201d. or \"I have selected the Gluten-free Pasta with Tomato sauce because it adheres to your calorie limit of 500 and does not contain any lactose or gluten to which you are intolerant. This meal provides a balanced portion of carbs, aligning with your dietary goals.\", "
+      }
+    }
+  },
+  "8XFR5LPQ": {
+    "paper": {
+      "title": "Supporting explainable planning and\u00a0human-aware mission specification for\u00a0underwater robots",
+      "authors": "A. Lindsay; A.A. Ramirez-Duque; B. Craenen; A. Munafo; L. Bo\u00e9; A. Campbell; R.P.A. Petrick; M.N. Huda; M. Wang; T. Kalganova",
+      "year": "2025"
+    },
+    "excluded_from_full_text_review": false,
+    "exclusion_reason": "",
+    "responses": {
+      "General information": {
+        "Code available?": [
+          "no"
+        ],
+        "Project status": [
+          "Not applicable"
+        ],
+        "License": [
+          "Not applicable"
+        ],
+        "Additional information": [
+          "No additional information"
+        ]
+      },
+      "Target platform (RQ1)": {
+        "Deployment": [
+          "Underspecified"
+        ],
+        "Robotic device": [
+          "Autonomous underwater vehicle"
+        ],
+        "Simulation environment": [
+          "Not applicable"
+        ],
+        "Domain": [
+          "Underspecified"
+        ],
+        "Use case": [
+          "Navigation"
+        ],
+        "Location": [
+          "Underspecified"
+        ],
+        "Multi Agent System": [
+          "One human - multiple robots"
+        ]
+      },
+      "Software characteristics (RQ2)": {
+        "Middleware": [
+          "Other: gRPC"
+        ],
+        "Control algorithm": [
+          "Underspecified"
+        ],
+        "Adaptation": [
+          "None"
+        ],
+        "Goal of adaptation": [
+          "Not applicable"
+        ]
+      },
+      "Explanation structure (RQ3)": {
+        "Intrinsic vs. post-hoc": [
+          "Intrinsic"
+        ],
+        "Generation technique": [
+          "Discussion needed: MIRIAM (basead on semantic represetnation of user input and data retrieval from database)"
+        ],
+        "Explained robot part": [
+          "Behaviour"
+        ],
+        "Explanatory question": [
+          "Why"
+        ],
+        "Planning level scope": [
+          "Goal level"
+        ],
+        "Presentation modality": [
+          "Visualization",
+          "Text"
+        ]
+      },
+      "Stakeholder (RQ4)": {
+        "HRI Type": [
+          "Underspecified"
+        ],
+        "Motivation": [
+          "User understanding"
+        ],
+        "Stakeholder type": [
+          "Operator / End user (non-expert)"
+        ]
+      },
+      "Evaluation (RQ5)": {
+        "State of explainability": [
+          "Pseudo-code"
+        ],
+        "Type of explainability evaluation": [
+          "Discussion needed: qualitative illustrative evaluation"
+        ],
+        "Evaluation metrics": [
+          "Other: understandability, awareness"
+        ]
+      }
+    },
+    "mandatory_texts": {
+      "Explanation structure (RQ3)": {
+        "Planning level scope": "User: Why not move vehicle2 from survey1_2 to target3?\nMIRIAM: Well, the plan becomes 30 seconds longer if we use that action.\nDo you want to see the comparison?"
       }
     }
   }
