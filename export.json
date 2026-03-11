@@ -328,7 +328,7 @@
           "Underspecified"
         ],
         "Type of explainability evaluation": [
-          "Discussion needed: They evaluated three examples of the BDI agent & LLM interacting with a user and call for more evaluation in the future. This is not really a technical benchmark nor a user study. I would suggest something like qualitative illustrative evaluation (by chatgpt)"
+          "None"
         ]
       }
     },
@@ -447,7 +447,7 @@
           "Underspecified"
         ],
         "Type of explainability evaluation": [
-          "Discussion needed: qualitative illustrative evaluation"
+          "None"
         ]
       }
     },
@@ -562,7 +562,7 @@
           "Pseudo-code"
         ],
         "Type of explainability evaluation": [
-          "Discussion needed: qualitative illustrative evaluation"
+          "None"
         ],
         "Evaluation metrics": [
           "Other: understandability, awareness"
@@ -572,6 +572,224 @@
     "mandatory_texts": {
       "Explanation structure (RQ3)": {
         "Planning level scope": "User: Why not move vehicle2 from survey1_2 to target3?\nMIRIAM: Well, the plan becomes 30 seconds longer if we use that action.\nDo you want to see the comparison?"
+      }
+    }
+  },
+  "VPXS3RJR": {
+    "paper": {
+      "title": "Effect of efficiently computed explanations for robot motion planning failures in human\u2013robot interaction",
+      "authors": "M. Eder; B. Kubicek; G. Steinbauer-Wagner",
+      "year": "2026"
+    },
+    "excluded_from_full_text_review": false,
+    "exclusion_reason": "",
+    "responses": {
+      "General information": {
+        "Code available?": [
+          "no"
+        ],
+        "Project status": [
+          "Not applicable"
+        ],
+        "License": [
+          "Not applicable"
+        ],
+        "Additional information": [
+          "No additional information"
+        ]
+      },
+      "Target platform (RQ1)": {
+        "Deployment": [
+          "Real robot",
+          "Robot simulation"
+        ],
+        "Robotic device": [
+          "Discussion needed: mobile robot (husky) for user study and manipulator for performance evaluatoin"
+        ],
+        "Simulation environment": [
+          "Gazebo"
+        ],
+        "Domain": [
+          "Underspecified"
+        ],
+        "Use case": [
+          "Navigation"
+        ],
+        "Location": [
+          "Laboratory"
+        ],
+        "Multi Agent System": [
+          "No, i.e. one human - one robot"
+        ]
+      },
+      "Software characteristics (RQ2)": {
+        "Middleware": [
+          "ROS1"
+        ],
+        "Control algorithm": [
+          "Underspecified"
+        ],
+        "Adaptation": [
+          "None"
+        ],
+        "Goal of adaptation": [
+          "Not applicable"
+        ]
+      },
+      "Explanation structure (RQ3)": {
+        "Intrinsic vs. post-hoc": [
+          "Underspecified"
+        ],
+        "Generation technique": [
+          "Underspecified"
+        ],
+        "Explained robot part": [
+          "Behaviour"
+        ],
+        "Explanatory question": [
+          "What"
+        ],
+        "Planning level scope": [
+          "Action level",
+          "Goal level"
+        ],
+        "Presentation modality": [
+          "Visualization"
+        ]
+      },
+      "Stakeholder (RQ4)": {
+        "HRI Type": [
+          "Human supervision"
+        ],
+        "Motivation": [
+          "Transparency"
+        ],
+        "Stakeholder type": [
+          "Operator / End user (non-expert)"
+        ]
+      },
+      "Evaluation (RQ5)": {
+        "State of explainability": [
+          "Pseudo-code"
+        ],
+        "Type of explainability evaluation": [
+          "User study, Quantitative"
+        ],
+        "Evaluation metrics": [
+          "Other: performance, trust, workload"
+        ]
+      }
+    },
+    "mandatory_texts": {
+      "Explanation structure (RQ3)": {
+        "Planning level scope": "Final goal pose not achievable. Please select alternative!, Path too narrow for automatic navigation. Please take over control!, Path blocked by Box 1. Please take over control!, Path is blocked. Please take over control!"
+      }
+    }
+  },
+  "YP7LB5NH": {
+    "paper": {
+      "title": "Beyond performance: Explaining generalisation failures of Robotic Foundation Models in industrial simulation",
+      "authors": "D. Kube; S. Hadwiger; T. Meisen",
+      "year": "2025"
+    },
+    "excluded_from_full_text_review": false,
+    "exclusion_reason": "",
+    "responses": {
+      "General information": {
+        "Code available?": [
+          "no"
+        ],
+        "Project status": [
+          "Not applicable"
+        ],
+        "License": [
+          "Not applicable"
+        ],
+        "Additional information": [
+          "No additional information"
+        ]
+      },
+      "Target platform (RQ1)": {
+        "Deployment": [
+          "Robot simulation"
+        ],
+        "Robotic device": [
+          "Manipulator (unspecified) => Use if not further specified"
+        ],
+        "Simulation environment": [
+          "PyBullet"
+        ],
+        "Domain": [
+          "Underspecified"
+        ],
+        "Use case": [
+          "Manipulation"
+        ],
+        "Location": [
+          "Laboratory"
+        ],
+        "Multi Agent System": [
+          "No, i.e. one human - one robot"
+        ]
+      },
+      "Software characteristics (RQ2)": {
+        "Middleware": [
+          "Underspecified"
+        ],
+        "Control algorithm": [
+          "Other: Robotic Foundation Model (RFM)"
+        ],
+        "Adaptation": [
+          "None"
+        ],
+        "Goal of adaptation": [
+          "Not applicable"
+        ]
+      },
+      "Explanation structure (RQ3)": {
+        "Intrinsic vs. post-hoc": [
+          "Post-hoc"
+        ],
+        "Generation technique": [
+          "DL-based"
+        ],
+        "Explained robot part": [
+          "Discussion needed: Are heatmaps from a third person perspective behavior explanations?"
+        ],
+        "Explanatory question": [
+          "Discussion needed: Can heatmaps of input images for robot foundation models be considered something other than underspecified?"
+        ],
+        "Planning level scope": [
+          "Action level"
+        ],
+        "Presentation modality": [
+          "Plot"
+        ]
+      },
+      "Stakeholder (RQ4)": {
+        "HRI Type": [
+          "Underspecified"
+        ],
+        "Motivation": [
+          "Transparency"
+        ],
+        "Stakeholder type": [
+          "Underspecified"
+        ]
+      },
+      "Evaluation (RQ5)": {
+        "State of explainability": [
+          "Pseudo-code"
+        ],
+        "Type of explainability evaluation": [
+          "Technical (Benchmark), Quantitative"
+        ],
+        "Evaluation metrics": []
+      }
+    },
+    "mandatory_texts": {
+      "Explanation structure (RQ3)": {
+        "Planning level scope": "Heatmap images"
       }
     }
   }
