@@ -2187,6 +2187,814 @@
     "exclusion_reason": "",
     "responses": {
       "General information": {
+        "Code available?": [
+          "no"
+        ],
+        "Project status": [
+          "Not applicable"
+        ],
+        "License": [
+          "Not applicable"
+        ],
+        "Additional information": [
+          "No additional information"
+        ]
+      },
+      "Target platform (RQ1)": {
+        "Deployment": [
+          "Robot simulation"
+        ],
+        "Robotic device": [
+          "Underspecified"
+        ],
+        "Simulation environment": [
+          "Other: ai2thor"
+        ],
+        "Domain": [
+          "Consumer robot"
+        ],
+        "Use case": [
+          "Other: Failure handling"
+        ],
+        "Location": [
+          "Underspecified"
+        ],
+        "Multi Agent System": [
+          "No, i.e. one human - one robot"
+        ]
+      },
+      "Software characteristics (RQ2)": {
+        "Middleware": [
+          "Underspecified"
+        ],
+        "Control algorithm": [
+          "Underspecified"
+        ],
+        "Adaptation": [
+          "None"
+        ],
+        "Goal of adaptation": [
+          "Not applicable"
+        ]
+      },
+      "Explanation structure (RQ3)": {
+        "Intrinsic vs. post-hoc": [
+          "Intrinsic"
+        ],
+        "Generation technique": [
+          "Tree-based"
+        ],
+        "Explained robot part": [
+          "Behaviour",
+          "Perception"
+        ],
+        "Explanatory question": [
+          "Underspecified"
+        ],
+        "Planning level scope": [
+          "Action level"
+        ],
+        "Presentation modality": [
+          "Text"
+        ]
+      },
+      "Stakeholder (RQ4)": {
+        "HRI Type": [
+          "Underspecified"
+        ],
+        "Motivation": [
+          "Failure handling",
+          "User understanding"
+        ],
+        "Stakeholder type": [
+          "Operator / End user (non-expert)"
+        ]
+      },
+      "Evaluation (RQ5)": {
+        "State of explainability": [
+          "Evaluated"
+        ],
+        "Type of explainability evaluation": [
+          "Technical (Benchmark), Quantitative",
+          "User study, Quantitative"
+        ],
+        "Evaluation metrics": [
+          "Usability",
+          "Other: helpfulness"
+        ]
+      }
+    },
+    "mandatory_texts": {
+      "Explanation structure (RQ3)": {
+        "Planning level scope": "\"The robot could not pick up the < dobj > because < reasoning >\"; extracts a subgraph g containing all relations rk \u2208 R which contain dobj as a node in the triple, \"The robot cannot pick up the cell phone because it is under a book.\"; \"The robot cannot pick up the potato because it is occluded by a glass bottle and too close to a loaf of bread.\"; \"The robot cannot pick up the pillow because it is too large to pick up.\""
+      }
+    }
+  },
+  "2849SXHS": {
+    "paper": {
+      "title": "A generalizable architecture for explaining robot failures using behavior trees and large language models",
+      "authors": "Christian Tagliamonte; Daniel Maccaline; Gregory LeMasurier; H. Yanco",
+      "year": "2024"
+    },
+    "excluded_from_full_text_review": false,
+    "exclusion_reason": "",
+    "responses": {
+      "General information": {
+        "Code available?": [
+          "no"
+        ],
+        "Project status": [
+          "Not applicable"
+        ],
+        "License": [
+          "Not applicable"
+        ],
+        "Additional information": [
+          "No additional information"
+        ]
+      },
+      "Target platform (RQ1)": {
+        "Deployment": [
+          "Underspecified"
+        ],
+        "Robotic device": [
+          "Underspecified"
+        ],
+        "Simulation environment": [
+          "Not applicable"
+        ],
+        "Domain": [
+          "Underspecified"
+        ],
+        "Use case": [
+          "Manipulation"
+        ],
+        "Location": [
+          "Underspecified"
+        ],
+        "Multi Agent System": [
+          "Underspecified"
+        ]
+      },
+      "Software characteristics (RQ2)": {
+        "Middleware": [
+          "ROS1"
+        ],
+        "Control algorithm": [
+          "BT"
+        ],
+        "Adaptation": [
+          "None"
+        ],
+        "Goal of adaptation": [
+          "Not applicable"
+        ]
+      },
+      "Explanation structure (RQ3)": {
+        "Intrinsic vs. post-hoc": [
+          "Intrinsic"
+        ],
+        "Generation technique": [
+          "LLM-based"
+        ],
+        "Explained robot part": [
+          "Perception",
+          "Behaviour"
+        ],
+        "Explanatory question": [
+          "Underspecified"
+        ],
+        "Planning level scope": [
+          "Action level",
+          "Sequence level"
+        ],
+        "Presentation modality": [
+          "Text"
+        ]
+      },
+      "Stakeholder (RQ4)": {
+        "HRI Type": [
+          "Underspecified"
+        ],
+        "Motivation": [
+          "Failure handling",
+          "Discussion needed: question answering"
+        ],
+        "Stakeholder type": [
+          "Underspecified"
+        ]
+      },
+      "Evaluation (RQ5)": {
+        "State of explainability": [
+          "Pseudo-code"
+        ],
+        "Type of explainability evaluation": [
+          "None"
+        ],
+        "Evaluation metrics": [
+          "Not applicable"
+        ]
+      }
+    },
+    "mandatory_texts": {
+      "Explanation structure (RQ3)": {
+        "Planning level scope": "I couldn\u2019t fnd the screw on the table, so I\u2019m unable to pick up the screw right now.; I\u2019ve detected objects that have unexpectedly moved in my environment, so I\u2019m unable to safely scan the scene for collision avoidance while picking up the screw.; I couldn\u2019t generate a path to the caddy, so I\u2019m unable to position the screw for placement in the caddy."
+      }
+    }
+  },
+  "CD6AUXQK": {
+    "paper": {
+      "title": "Self-explaining social robots: An explainable behavior generation architecture for human-robot interaction",
+      "authors": "Sonja Stange; Teena Hassan; Florian Schr\u00f6der; Jacqueline Konkol; S. Kopp",
+      "year": "2022"
+    },
+    "excluded_from_full_text_review": false,
+    "exclusion_reason": "",
+    "responses": {
+      "General information": {
+        "Code available?": [
+          "yes"
+        ],
+        "Project status": [
+          "unmaintained"
+        ],
+        "License": [
+          "GPL"
+        ],
+        "Additional information": [
+          "Other: Talk about what, why and elaboration types."
+        ]
+      },
+      "Target platform (RQ1)": {
+        "Deployment": [
+          "Real robot"
+        ],
+        "Robotic device": [
+          "Humanoid robot"
+        ],
+        "Simulation environment": [
+          "Not applicable"
+        ],
+        "Domain": [
+          "Consumer robot"
+        ],
+        "Use case": [
+          "Underspecified"
+        ],
+        "Location": [
+          "Laboratory"
+        ],
+        "Multi Agent System": [
+          "No, i.e. one human - one robot"
+        ]
+      },
+      "Software characteristics (RQ2)": {
+        "Middleware": [
+          "ROS1",
+          "Other: MQTT"
+        ],
+        "Control algorithm": [
+          "BDI Agent",
+          "BT"
+        ],
+        "Adaptation": [
+          "None"
+        ],
+        "Goal of adaptation": [
+          "Not applicable"
+        ]
+      },
+      "Explanation structure (RQ3)": {
+        "Intrinsic vs. post-hoc": [
+          "Intrinsic"
+        ],
+        "Generation technique": [
+          "Other: natural language generation (NLG)"
+        ],
+        "Explained robot part": [
+          "Underspecified"
+        ],
+        "Explanatory question": [
+          "Why",
+          "What"
+        ],
+        "Planning level scope": [
+          "Goal level",
+          "Sequence level",
+          "Underspecified"
+        ],
+        "Presentation modality": [
+          "Underspecified"
+        ]
+      },
+      "Stakeholder (RQ4)": {
+        "HRI Type": [
+          "Discussion needed: Human is required to question the robot to find the robots goal."
+        ],
+        "Motivation": [
+          "Mental model alignment"
+        ],
+        "Stakeholder type": [
+          "Operator / End user (non-expert)"
+        ]
+      },
+      "Evaluation (RQ5)": {
+        "State of explainability": [
+          "Evaluated"
+        ],
+        "Type of explainability evaluation": [
+          "User study, Quantitative"
+        ],
+        "Evaluation metrics": [
+          "Understandability",
+          "Trust",
+          "Other: explanations were not rated as particularly justifying the robot\u2019s behaviors; why the robot behaved as it did; likeability; intelligence"
+        ]
+      }
+    },
+    "mandatory_texts": {
+      "Explanation structure (RQ3)": {
+        "Planning level scope": "Decision Engine sends a \u201cdecision snapshot\u201d to the Explanation Engine, containing the selected strategy along with the specific robot and user needs at the time the strategy was selected for execution"
+      }
+    }
+  },
+  "IA7D9GH2": {
+    "paper": {
+      "title": "Integrated Knowledge- Based Reasoning and Data-Driven Learning for Explainable Agency in Robotics",
+      "authors": "M. Sridharan",
+      "year": "2024"
+    },
+    "excluded_from_full_text_review": false,
+    "exclusion_reason": "",
+    "responses": {
+      "General information": {
+        "Code available?": [
+          "no"
+        ],
+        "Project status": [
+          "Not applicable"
+        ],
+        "License": [
+          "Not applicable"
+        ],
+        "Additional information": [
+          "No additional information"
+        ]
+      },
+      "Target platform (RQ1)": {
+        "Deployment": [
+          "Real robot",
+          "Robot simulation"
+        ],
+        "Robotic device": [
+          "Manipulator (unspecified) => Use if not further specified"
+        ],
+        "Simulation environment": [
+          "PyBullet"
+        ],
+        "Domain": [
+          "Underspecified"
+        ],
+        "Use case": [
+          "Manipulation"
+        ],
+        "Location": [
+          "Laboratory"
+        ],
+        "Multi Agent System": [
+          "No, i.e. one human - one robot"
+        ]
+      },
+      "Software characteristics (RQ2)": {
+        "Middleware": [
+          "Underspecified"
+        ],
+        "Control algorithm": [
+          "Decision tree",
+          "Cognitive architecture"
+        ],
+        "Adaptation": [
+          "None"
+        ],
+        "Goal of adaptation": [
+          "Not applicable"
+        ]
+      },
+      "Explanation structure (RQ3)": {
+        "Intrinsic vs. post-hoc": [
+          "Intrinsic"
+        ],
+        "Generation technique": [
+          "Template-based"
+        ],
+        "Explained robot part": [
+          "Perception",
+          "Behaviour"
+        ],
+        "Explanatory question": [
+          "Why",
+          "What"
+        ],
+        "Planning level scope": [
+          "Goal level",
+          "Sequence level"
+        ],
+        "Presentation modality": [
+          "Text",
+          "Speech"
+        ]
+      },
+      "Stakeholder (RQ4)": {
+        "HRI Type": [
+          "Discussion needed: human instruction; tell the robot what to do; this is not really reflected in any HRI type."
+        ],
+        "Motivation": [
+          "Underspecified"
+        ],
+        "Stakeholder type": [
+          "Underspecified"
+        ]
+      },
+      "Evaluation (RQ5)": {
+        "State of explainability": [
+          "Evaluated"
+        ],
+        "Type of explainability evaluation": [
+          "Technical (Benchmark), Quantitative"
+        ],
+        "Evaluation metrics": [
+          "Not applicable"
+        ]
+      }
+    },
+    "mandatory_texts": {
+      "Explanation structure (RQ3)": {
+        "Planning level scope": "Human: \u201cWhy do you want to pick up the green mug?\u201d Robot: \u201cI have to place the yellow cylinder on the green cube, and the yellow cylinder is below the green mug.\u201d; Human: \u201cWhat would happen if the ball is rolled?\u201d Baxter: \u201cThe structure of blocks would be unstable\u201d."
+      }
+    }
+  },
+  "H4QA43XT": {
+    "paper": {
+      "title": "Explainable Deep Reinforcement Learning for UAV autonomous path planning",
+      "authors": "L. He; N. Aouf; B. Song",
+      "year": "2021"
+    },
+    "excluded_from_full_text_review": false,
+    "exclusion_reason": "",
+    "responses": {
+      "General information": {
+        "Code available?": [
+          "no"
+        ],
+        "Project status": [
+          "Not applicable"
+        ],
+        "License": [
+          "Not applicable"
+        ],
+        "Additional information": [
+          "No additional information"
+        ]
+      },
+      "Target platform (RQ1)": {
+        "Deployment": [
+          "Real robot",
+          "Robot simulation"
+        ],
+        "Robotic device": [
+          "Drone"
+        ],
+        "Simulation environment": [
+          "Gazebo",
+          "Other: AirSim"
+        ],
+        "Domain": [
+          "Underspecified"
+        ],
+        "Use case": [
+          "Collision avoidance",
+          "Navigation"
+        ],
+        "Location": [
+          "Laboratory",
+          "Field"
+        ],
+        "Multi Agent System": [
+          "No, i.e. one human - one robot"
+        ]
+      },
+      "Software characteristics (RQ2)": {
+        "Middleware": [
+          "ROS1"
+        ],
+        "Control algorithm": [
+          "DL-Based",
+          "MDP-based"
+        ],
+        "Adaptation": [
+          "Yes, autonomous adaptation"
+        ],
+        "Goal of adaptation": [
+          "Discussion needed: idk what for autonomous trajectory adapation?"
+        ]
+      },
+      "Explanation structure (RQ3)": {
+        "Intrinsic vs. post-hoc": [
+          "Post-hoc"
+        ],
+        "Generation technique": [
+          "DL-based",
+          "Template-based"
+        ],
+        "Explained robot part": [
+          "Behaviour",
+          "Perception"
+        ],
+        "Explanatory question": [
+          "Underspecified"
+        ],
+        "Planning level scope": [
+          "Action level",
+          "Sequence level"
+        ],
+        "Presentation modality": [
+          "Text",
+          "Plot",
+          "Visualization"
+        ]
+      },
+      "Stakeholder (RQ4)": {
+        "HRI Type": [
+          "Underspecified"
+        ],
+        "Motivation": [
+          "Trust (increase)",
+          "User understanding"
+        ],
+        "Stakeholder type": [
+          "Operator / End user (non-expert)",
+          "Domain expert"
+        ]
+      },
+      "Evaluation (RQ5)": {
+        "State of explainability": [
+          "Evaluated"
+        ],
+        "Type of explainability evaluation": [
+          "Technical (Benchmark), Quantitative"
+        ],
+        "Evaluation metrics": [
+          "Not applicable"
+        ]
+      }
+    },
+    "mandatory_texts": {
+      "Explanation structure (RQ3)": {
+        "Planning level scope": "action 1 is slow down because angle error is <number> and v_xy is 0.10, action 2 is keep altitude and action 3 is turn right because angle error <number> and CNN 4"
+      }
+    }
+  },
+  "PDWQJ7B2": {
+    "paper": {
+      "title": "Transparency through Explanations and Justifications in Human-Robot Task-Based Communications",
+      "authors": "M. Scheutz; R. Thielstrom; M. Abrams",
+      "year": "2022"
+    },
+    "excluded_from_full_text_review": false,
+    "exclusion_reason": "",
+    "responses": {
+      "General information": {
+        "Code available?": [
+          "no"
+        ],
+        "Project status": [
+          "Not applicable"
+        ],
+        "License": [
+          "Not applicable"
+        ],
+        "Additional information": [
+          "Other: Gricean Maxims (Grice, 1975) of quality, quantity, relation, and manner"
+        ]
+      },
+      "Target platform (RQ1)": {
+        "Deployment": [
+          "Real robot"
+        ],
+        "Robotic device": [
+          "Humanoid robot"
+        ],
+        "Simulation environment": [
+          "Not applicable"
+        ],
+        "Domain": [
+          "Consumer robot"
+        ],
+        "Use case": [
+          "Manipulation"
+        ],
+        "Location": [
+          "Laboratory"
+        ],
+        "Multi Agent System": [
+          "No, i.e. one human - one robot"
+        ]
+      },
+      "Software characteristics (RQ2)": {
+        "Middleware": [
+          "Underspecified"
+        ],
+        "Control algorithm": [
+          "Cognitive architecture"
+        ],
+        "Adaptation": [
+          "Discussion needed: Robot rejects human request @Andi: Do you want this?"
+        ],
+        "Goal of adaptation": [
+          "Discussion needed: see adapation"
+        ]
+      },
+      "Explanation structure (RQ3)": {
+        "Intrinsic vs. post-hoc": [
+          "Intrinsic"
+        ],
+        "Generation technique": [
+          "Other: Natural language generation (NLG)"
+        ],
+        "Explained robot part": [
+          "Behaviour"
+        ],
+        "Explanatory question": [
+          "Underspecified"
+        ],
+        "Planning level scope": [
+          "Goal level"
+        ],
+        "Presentation modality": [
+          "Expressive motion",
+          "Speech"
+        ]
+      },
+      "Stakeholder (RQ4)": {
+        "HRI Type": [
+          "Cooperation"
+        ],
+        "Motivation": [
+          "Transparency"
+        ],
+        "Stakeholder type": [
+          "Operator / End user (non-expert)"
+        ]
+      },
+      "Evaluation (RQ5)": {
+        "State of explainability": [
+          "Pseudo-code"
+        ],
+        "Type of explainability evaluation": [
+          "None"
+        ],
+        "Evaluation metrics": [
+          "Not applicable"
+        ]
+      }
+    },
+    "toggle_states": {
+      "Stakeholder (RQ4)": {
+        "Stakeholder type": {
+          "enabled": true,
+          "text": "Images"
+        }
+      }
+    },
+    "mandatory_texts": {
+      "Explanation structure (RQ3)": {
+        "Planning level scope": "Human: Give me the mug, Andy. Robot: I should not give you the mug because it belongs to Ravenna, and I need Ravenna\u2019s permission. Human: Ah Okay."
+      }
+    }
+  },
+  "8TC4BUMX": {
+    "paper": {
+      "title": "Using large language models for interpreting autonomous robots behaviors",
+      "authors": "Miguel \u00c1ngel Gonz\u00e1lez Santamarta; Laura Fern\u00e1ndez-Becerra; David Sobr\u00edn-Hidalgo; \u00c1. Guerrero-Higueras; Irene Gonz'alez; F. J. Rodr\u00edguez-Lera",
+      "year": "2023"
+    },
+    "excluded_from_full_text_review": false,
+    "exclusion_reason": "",
+    "responses": {
+      "General information": {
+        "Code available?": [
+          "no"
+        ],
+        "Project status": [
+          "Not applicable"
+        ],
+        "License": [
+          "Not applicable"
+        ],
+        "Additional information": [
+          "No additional information"
+        ]
+      },
+      "Target platform (RQ1)": {
+        "Deployment": [
+          "Robot recording"
+        ],
+        "Robotic device": [
+          "Not applicable => Use if there is no specific robot mentioned"
+        ],
+        "Simulation environment": [
+          "Not applicable"
+        ],
+        "Domain": [
+          "Underspecified"
+        ],
+        "Use case": [
+          "Underspecified"
+        ],
+        "Location": [
+          "Underspecified"
+        ],
+        "Multi Agent System": [
+          "Underspecified"
+        ]
+      },
+      "Software characteristics (RQ2)": {
+        "Middleware": [
+          "ROS2"
+        ],
+        "Control algorithm": [
+          "PDDL"
+        ],
+        "Adaptation": [
+          "None"
+        ],
+        "Goal of adaptation": [
+          "Not applicable"
+        ]
+      },
+      "Explanation structure (RQ3)": {
+        "Intrinsic vs. post-hoc": [
+          "Post-hoc"
+        ],
+        "Generation technique": [
+          "LLM-based"
+        ],
+        "Explained robot part": [
+          "Behaviour"
+        ],
+        "Explanatory question": [
+          "Why",
+          "How",
+          "What"
+        ],
+        "Planning level scope": [
+          "Underspecified"
+        ],
+        "Presentation modality": [
+          "Text"
+        ]
+      },
+      "Stakeholder (RQ4)": {
+        "HRI Type": [
+          "Underspecified"
+        ],
+        "Motivation": [
+          "Transparency",
+          "Accountability",
+          "Trust (increase)"
+        ],
+        "Stakeholder type": [
+          "Operator / End user (non-expert)"
+        ]
+      },
+      "Evaluation (RQ5)": {
+        "State of explainability": [
+          "Evaluated"
+        ],
+        "Type of explainability evaluation": [
+          "Technical (Benchmark), Qualitative"
+        ],
+        "Evaluation metrics": [
+          "Not applicable"
+        ]
+      }
+    },
+    "mandatory_texts": {
+      "Explanation structure (RQ3)": {
+        "Planning level scope": "N/A"
+      }
+    }
+  },
+  "W9ICSGKG": {
+    "paper": {
+      "title": "Transparent Interaction Based Learning for Human-Robot Collaboration",
+      "authors": "E. Bagheri; J. de Winter; B. Vanderborght",
+      "year": "2022"
+    },
+    "excluded_from_full_text_review": true,
+    "exclusion_reason": "User Study only",
+    "responses": {
+      "General information": {
         "Code available?": [],
         "Project status": [],
         "License": [],
