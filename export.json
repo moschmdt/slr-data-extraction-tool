@@ -2991,47 +2991,109 @@
       "authors": "E. Bagheri; J. de Winter; B. Vanderborght",
       "year": "2022"
     },
-    "excluded_from_full_text_review": true,
+    "excluded_from_full_text_review": false,
     "exclusion_reason": "User Study only",
     "responses": {
       "General information": {
-        "Code available?": [],
-        "Project status": [],
-        "License": [],
-        "Additional information": []
+        "Code available?": [
+          "no"
+        ],
+        "Project status": [
+          "Not applicable"
+        ],
+        "License": [
+          "Not applicable"
+        ],
+        "Additional information": [
+          "No additional information"
+        ]
       },
       "Target platform (RQ1)": {
-        "Deployment": [],
-        "Robotic device": [],
-        "Simulation environment": [],
-        "Domain": [],
-        "Use case": [],
-        "Location": [],
-        "Multi Agent System": []
+        "Deployment": [
+          "Real robot",
+          "Robot recording"
+        ],
+        "Robotic device": [
+          "Manipulator (unspecified) => Use if not further specified"
+        ],
+        "Simulation environment": [
+          "Not applicable"
+        ],
+        "Domain": [
+          "Underspecified"
+        ],
+        "Use case": [
+          "Manipulation"
+        ],
+        "Location": [
+          "Laboratory"
+        ],
+        "Multi Agent System": [
+          "No, i.e. one human - one robot"
+        ]
       },
       "Software characteristics (RQ2)": {
-        "Middleware": [],
-        "Control algorithm": [],
-        "Adaptation": [],
-        "Goal of adaptation": []
+        "Middleware": [
+          "Underspecified"
+        ],
+        "Control algorithm": [
+          "Underspecified"
+        ],
+        "Adaptation": [
+          "Yes, with user involvement"
+        ],
+        "Goal of adaptation": [
+          "Continuous learning"
+        ]
       },
       "Explanation structure (RQ3)": {
-        "Intrinsic vs. post-hoc": [],
-        "Generation technique": [],
-        "Explained robot part": [],
-        "Explanatory question": [],
-        "Planning level scope": [],
-        "Presentation modality": []
+        "Intrinsic vs. post-hoc": [
+          "Underspecified"
+        ],
+        "Generation technique": [
+          "Template-based"
+        ],
+        "Explained robot part": [
+          "Behaviour"
+        ],
+        "Explanatory question": [
+          "Why"
+        ],
+        "Planning level scope": [
+          "Sequence level"
+        ],
+        "Presentation modality": [
+          "Text"
+        ]
       },
       "Stakeholder (RQ4)": {
-        "HRI Type": [],
-        "Motivation": [],
-        "Stakeholder type": []
+        "HRI Type": [
+          "Human supervision"
+        ],
+        "Motivation": [
+          "Underspecified"
+        ],
+        "Stakeholder type": [
+          "Operator / End user (non-expert)"
+        ]
       },
       "Evaluation (RQ5)": {
-        "State of explainability": [],
-        "Type of explainability evaluation": [],
-        "Evaluation metrics": []
+        "State of explainability": [
+          "Evaluated"
+        ],
+        "Type of explainability evaluation": [
+          "User study, Quantitative"
+        ],
+        "Evaluation metrics": [
+          "Trust",
+          "Satisfaction",
+          "User behavior (performance)"
+        ]
+      }
+    },
+    "mandatory_texts": {
+      "Explanation structure (RQ3)": {
+        "Planning level scope": "\"Why did you select this object?\" \u201cAfter assembling list-of-already-assembled-objects, possible objects for assembly are: list-of-possible-objects-in-this-state\u201d"
       }
     }
   }
