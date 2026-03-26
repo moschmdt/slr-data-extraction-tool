@@ -92,13 +92,10 @@
       },
       "Evaluation (RQ5)": {
         "State of explainability": [
-          "Pseudo-code"
-        ],
-        "Type of evaluation": [
-          "Technical (Benchmark), Quantitative"
+          "Evaluated"
         ],
         "Evaluation metrics": [
-          "Other: Model fidelity, Area under ROC Curve (AUC), "
+          "Not applicable"
         ],
         "Type of explainability evaluation": [
           "Technical (Benchmark), Quantitative"
@@ -188,7 +185,8 @@
           "Underspecified"
         ],
         "Presentation modality": [
-          "Visualization"
+          "Visualization",
+          "Text"
         ]
       },
       "Stakeholder (RQ4)": {
@@ -204,16 +202,14 @@
       },
       "Evaluation (RQ5)": {
         "State of explainability": [
-          "Implementation"
-        ],
-        "Type of evaluation": [
-          "User study, Quantitative"
+          "Evaluated"
         ],
         "Evaluation metrics": [
-          "Other: Usability, Godspeed (Anthropomorphism, Likability, Perceived Intelligence)"
+          "Usability",
+          "Other: Godspeed (Anthropomorphism, Likability, Perceived Intelligence), number of wrong commands by user, task success, structural knowledge and process knowledge"
         ],
         "Type of explainability evaluation": [
-          "User study, Qualitative"
+          "User study, Quantitative"
         ]
       }
     },
@@ -279,10 +275,10 @@
           "BDI Agent"
         ],
         "Adaptation": [
-          "None"
+          "Yes, autonomous adaptation"
         ],
         "Goal of adaptation": [
-          "Not applicable"
+          "Self protection"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -320,12 +316,8 @@
         "State of explainability": [
           "Pseudo-code"
         ],
-        "Type of evaluation": [
-          "Technical (Benchmark), Quantitative",
-          "Technical (Benchmark), Qualitative"
-        ],
         "Evaluation metrics": [
-          "Underspecified"
+          "Not applicable"
         ],
         "Type of explainability evaluation": [
           "None"
@@ -442,7 +434,6 @@
         "State of explainability": [
           "Pseudo-code"
         ],
-        "Type of evaluation": [],
         "Evaluation metrics": [
           "Underspecified"
         ],
