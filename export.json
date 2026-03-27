@@ -375,7 +375,7 @@
           "Medical and healthcare"
         ],
         "Use case": [
-          "Other: dietrary adherence"
+          "Other: recommender system"
         ],
         "Location": [
           "Underspecified"
@@ -424,7 +424,9 @@
           "Underspecified"
         ],
         "Motivation": [
-          "Trust (increase)"
+          "Trust (increase)",
+          "Mental model alignment",
+          "Other: user engagement, adherence to healthy behavior (food)"
         ],
         "Stakeholder type": [
           "Operator / End user (non-expert)"
@@ -510,10 +512,10 @@
           "Underspecified"
         ],
         "Adaptation": [
-          "None"
+          "Discussion needed: example scenario for a single asset [under water drone] could then be for it: to be launched; to transit to a survey area while avoiding an exclusion zone;"
         ],
         "Goal of adaptation": [
-          "Not applicable"
+          "Discussion needed: example scenario for a single asset [under water drone] could then be for it: to be launched; to transit to a survey area while avoiding an exclusion zone;"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -542,7 +544,8 @@
           "Underspecified"
         ],
         "Motivation": [
-          "User understanding"
+          "User understanding",
+          "Other: awareness"
         ],
         "Stakeholder type": [
           "Operator / End user (non-expert)"
@@ -595,7 +598,7 @@
           "Robot simulation"
         ],
         "Robotic device": [
-          "Discussion needed: mobile robot (husky) for user study and manipulator for performance evaluatoin"
+          "Discussion needed: Need multi selection here: mobile robot (husky) for user study and manipulator for performance evaluatoin"
         ],
         "Simulation environment": [
           "Gazebo"
@@ -621,10 +624,10 @@
           "Underspecified"
         ],
         "Adaptation": [
-          "None"
+          "Yes, with user involvement"
         ],
         "Goal of adaptation": [
-          "Not applicable"
+          "Self protection"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -635,7 +638,8 @@
           "Underspecified"
         ],
         "Explained robot part": [
-          "Behaviour"
+          "Behaviour",
+          "Perception"
         ],
         "Explanatory question": [
           "What"
@@ -645,7 +649,8 @@
           "Goal level"
         ],
         "Presentation modality": [
-          "Visualization"
+          "Visualization",
+          "Text"
         ]
       },
       "Stakeholder (RQ4)": {
@@ -653,7 +658,8 @@
           "Human supervision"
         ],
         "Motivation": [
-          "Transparency"
+          "Transparency",
+          "Failure handling"
         ],
         "Stakeholder type": [
           "Operator / End user (non-expert)"
@@ -661,19 +667,22 @@
       },
       "Evaluation (RQ5)": {
         "State of explainability": [
-          "Pseudo-code"
+          "Evaluated"
         ],
         "Type of explainability evaluation": [
-          "User study, Quantitative"
+          "User study, Quantitative",
+          "Technical (Benchmark), Quantitative"
         ],
         "Evaluation metrics": [
-          "Other: performance, trust, workload"
+          "User behavior (performance)",
+          "Trust",
+          "Cognitive load"
         ]
       }
     },
     "mandatory_texts": {
       "Explanation structure (RQ3)": {
-        "Planning level scope": "Final goal pose not achievable. Please select alternative!, Path too narrow for automatic navigation. Please take over control!, Path blocked by Box 1. Please take over control!, Path is blocked. Please take over control!"
+        "Planning level scope": "\"Final goal pose not achievable. Please select alternative!\", \"Path too narrow for automatic navigation. Please take over control!\", \"Path blocked by Box 1. Please take over control!\", \"Path is blocked. Please take over control!\""
       }
     }
   },
@@ -697,7 +706,7 @@
           "Not applicable"
         ],
         "Additional information": [
-          "No additional information"
+          "Other: guidelines for future RFM development, with an emphasis on explainability, modularity, and robust benchmarking"
         ]
       },
       "Target platform (RQ1)": {
@@ -731,10 +740,10 @@
           "Other: Robotic Foundation Model (RFM)"
         ],
         "Adaptation": [
-          "None"
+          "Discussion needed: @Andi: RFM are self adaptive by design I guess. But wanted to confirm with you. They"
         ],
         "Goal of adaptation": [
-          "Not applicable"
+          "Discussion needed: see adapation"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -748,7 +757,7 @@
           "Discussion needed: Are heatmaps from a third person perspective behavior explanations? (See figures)"
         ],
         "Explanatory question": [
-          "Discussion needed: Can heatmaps of input images for robot foundation models be considered something other than underspecified?"
+          "Underspecified"
         ],
         "Planning level scope": [
           "Action level"
@@ -762,7 +771,7 @@
           "Underspecified"
         ],
         "Motivation": [
-          "Transparency"
+          "Underspecified"
         ],
         "Stakeholder type": [
           "Developer"
@@ -770,7 +779,7 @@
       },
       "Evaluation (RQ5)": {
         "State of explainability": [
-          "Pseudo-code"
+          "Implementation"
         ],
         "Type of explainability evaluation": [
           "Discussion needed: They evaluate a robotic foundation model based on heatmaps claiming benchmarks alone are not sufficient. So this is not a benchmark in the traditional sense. Maybe a qualitative technical evaluation?"
@@ -848,10 +857,10 @@
           "Underspecified"
         ],
         "Adaptation": [
-          "None"
+          "Underspecified"
         ],
         "Goal of adaptation": [
-          "Not applicable"
+          "Underspecified"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -892,7 +901,7 @@
       },
       "Evaluation (RQ5)": {
         "State of explainability": [
-          "Pseudo-code"
+          "Evaluated"
         ],
         "Type of explainability evaluation": [
           "User study, Quantitative"
@@ -1001,7 +1010,7 @@
           "Coexistence"
         ],
         "Motivation": [
-          "Discussion needed: personalization"
+          "Discussion needed: personalization of explanations"
         ],
         "Stakeholder type": [
           "Operator / End user (non-expert)"
@@ -1015,7 +1024,8 @@
           "Technical (Benchmark), Quantitative"
         ],
         "Evaluation metrics": [
-          "Not applicable"
+          "Not applicable",
+          "Other: Technical: prompt and response token size"
         ]
       }
     },
@@ -1079,10 +1089,10 @@
           "RL"
         ],
         "Adaptation": [
-          "None"
+          "Yes, autonomous adaptation"
         ],
         "Goal of adaptation": [
-          "Not applicable"
+          "Self protection"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -1121,7 +1131,7 @@
       },
       "Evaluation (RQ5)": {
         "State of explainability": [
-          "Pseudo-code"
+          "Evaluated"
         ],
         "Type of explainability evaluation": [
           "User study, Quantitative"
@@ -1275,10 +1285,10 @@
           "BDI Agent"
         ],
         "Adaptation": [
-          "None"
+          "Underspecified"
         ],
         "Goal of adaptation": [
-          "Not applicable"
+          "Underspecified"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -1386,16 +1396,17 @@
       },
       "Software characteristics (RQ2)": {
         "Middleware": [
+          "ROS1",
           "ROS2"
         ],
         "Control algorithm": [
           "Underspecified"
         ],
         "Adaptation": [
-          "None"
+          "Yes, autonomous adaptation"
         ],
         "Goal of adaptation": [
-          "Not applicable"
+          "Self protection"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -1405,7 +1416,7 @@
         "Generation technique": [
           "LLM-based",
           "DL-based",
-          "Other: VLM"
+          "Other: vision language foundation models, Bootstrapping language-image pre-training for unified vision-language understanding and generation (BLIP), \"The robot is equipped with a modular explainability model implemented as four ROS2 nodes, 1) Camera Node, 2) BLIP Node, 3) Heatmap Node, and 4) LLM node\""
         ],
         "Explained robot part": [
           "Perception",
@@ -1434,14 +1445,15 @@
       },
       "Evaluation (RQ5)": {
         "State of explainability": [
-          "Pseudo-code"
+          "Evaluated"
         ],
         "Type of explainability evaluation": [
           "User study, Quantitative"
         ],
         "Evaluation metrics": [
           "Trust",
-          "Understandability"
+          "Understandability",
+          "Other: see TABLE II, missing in this answer is mapping of \"The information provided by the robot was clear and useful\" and \"I felt more in control when explanations were given\""
         ]
       }
     },
@@ -1556,10 +1568,10 @@
           "Underspecified"
         ],
         "Adaptation": [
-          "None"
+          "Yes, autonomous adaptation"
         ],
         "Goal of adaptation": [
-          "Not applicable"
+          "Discussion needed: The system generates actions based on perceived social situations and is expected to adapt it's plan accordingly -> Self configuration? The paper also works a lot on a dataset, and no actual robot. Is this even applicable in this situation?"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -1599,7 +1611,7 @@
         ],
         "Type of explainability evaluation": [
           "Technical (Benchmark), Quantitative",
-          "Technical (Benchmark), Qualitative"
+          "Discussion needed: \"To better understand the quantitative results of GRACE, we [the authors] qualitatively assessed the explanations it generated as shown in Figure 3.\" This is neither user study nor a technical qualitative analysis?"
         ],
         "Evaluation metrics": [
           "Not applicable"
@@ -1666,10 +1678,10 @@
           "Other: Large Multimodal Models (LMMs), VLA model"
         ],
         "Adaptation": [
-          "None"
+          "Underspecified"
         ],
         "Goal of adaptation": [
-          "Not applicable"
+          "Underspecified"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -1702,7 +1714,8 @@
         "Motivation": [
           "Trust (unspecified)",
           "Debugging",
-          "Discussion needed: safe deployment"
+          "Safety",
+          "Transparency"
         ],
         "Stakeholder type": [
           "Underspecified"
@@ -1710,7 +1723,7 @@
       },
       "Evaluation (RQ5)": {
         "State of explainability": [
-          "Pseudo-code"
+          "Evaluated"
         ],
         "Type of explainability evaluation": [
           "Technical (Benchmark), Quantitative",
@@ -1718,7 +1731,7 @@
         ],
         "Evaluation metrics": [
           "Accuracy of the explanation",
-          "Other: Clarity: Is the explanation easy to understand?; Usefullness"
+          "Other: Clarity: Is the explanation easy to understand?; Usefullness; Techncial: BLEU-4, ROUGE-L (F1)"
         ]
       }
     },
@@ -1833,10 +1846,10 @@
           "Underspecified"
         ],
         "Adaptation": [
-          "None"
+          "Yes, autonomous adaptation"
         ],
         "Goal of adaptation": [
-          "Not applicable"
+          "Self protection"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -1878,7 +1891,8 @@
           "Technical (Benchmark), Quantitative"
         ],
         "Evaluation metrics": [
-          "Underspecified"
+          "Not applicable",
+          "Other: Technical: success rate"
         ]
       }
     },
@@ -1939,13 +1953,13 @@
           "Underspecified"
         ],
         "Control algorithm": [
-          "Underspecified"
+          "Other: Rapidly-exploring random trees: A new tool for path planning (RRT) and Path planning in expansive configuration spaces (EST)"
         ],
         "Adaptation": [
-          "None"
+          "Yes, autonomous adaptation"
         ],
         "Goal of adaptation": [
-          "Not applicable"
+          "Self protection"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -1988,7 +2002,8 @@
           "Technical (Benchmark), Quantitative"
         ],
         "Evaluation metrics": [
-          "Not applicable"
+          "Not applicable",
+          "Other: Technical: # Solns. Found (%), Runtime (s),  Runtime Success (s),  Ave. Cost,  Segment  Time (s), States added"
         ]
       }
     },
@@ -2078,7 +2093,7 @@
           "Underspecified"
         ],
         "Additional information": [
-          "No additional information"
+          "Other: extensive definition about coherence of explanations"
         ]
       },
       "Target platform (RQ1)": {
@@ -2096,7 +2111,8 @@
           "Consumer robot"
         ],
         "Use case": [
-          "Underspecified"
+          "Navigation",
+          "Manipulation"
         ],
         "Location": [
           "Laboratory"
@@ -2124,10 +2140,11 @@
           "Underspecified"
         ],
         "Generation technique": [
-          "Discussion needed: explanations are used from dataset, more examples are generated via ai2thor: \"We further generate counterfactual examples based on the metadata provided by the ai2thor simulator\""
+          "LLM-based"
         ],
         "Explained robot part": [
-          "Underspecified"
+          "Perception",
+          "Behaviour"
         ],
         "Explanatory question": [
           "Underspecified"
@@ -2136,7 +2153,8 @@
           "Underspecified"
         ],
         "Presentation modality": [
-          "Underspecified"
+          "Visualization",
+          "Text"
         ]
       },
       "Stakeholder (RQ4)": {
@@ -2144,10 +2162,10 @@
           "Underspecified"
         ],
         "Motivation": [
-          "Discussion needed: Accountability"
+          "Failure handling"
         ],
         "Stakeholder type": [
-          "Underspecified"
+          "Operator / End user (non-expert)"
         ]
       },
       "Evaluation (RQ5)": {
@@ -2158,7 +2176,8 @@
           "Technical (Benchmark), Quantitative"
         ],
         "Evaluation metrics": [
-          "Not applicable"
+          "Not applicable",
+          "Other: Technical: coherence of multiple explanations by bert models"
         ]
       }
     },
@@ -2193,10 +2212,11 @@
       },
       "Target platform (RQ1)": {
         "Deployment": [
-          "Robot simulation"
+          "Robot simulation",
+          "Robot recording"
         ],
         "Robotic device": [
-          "Underspecified"
+          "Mobile manipulator"
         ],
         "Simulation environment": [
           "Other: ai2thor"
@@ -2208,7 +2228,7 @@
           "Other: Failure handling"
         ],
         "Location": [
-          "Underspecified"
+          "Field"
         ],
         "Multi Agent System": [
           "No, i.e. one human - one robot"
@@ -2222,10 +2242,10 @@
           "Underspecified"
         ],
         "Adaptation": [
-          "None"
+          "Underspecified"
         ],
         "Goal of adaptation": [
-          "Not applicable"
+          "Underspecified"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -2233,7 +2253,8 @@
           "Intrinsic"
         ],
         "Generation technique": [
-          "Tree-based"
+          "Tree-based",
+          "Template-based"
         ],
         "Explained robot part": [
           "Behaviour",
@@ -2266,12 +2287,10 @@
           "Evaluated"
         ],
         "Type of explainability evaluation": [
-          "Technical (Benchmark), Quantitative",
           "User study, Quantitative"
         ],
         "Evaluation metrics": [
-          "Usability",
-          "Other: helpfulness"
+          "Other: Failure Identification (FId): The ability to accurately select the correct cause(s) of failure in a scene., Solution Identification (SId): The ability to accurately select the actions needed to remedy the failure in a scene."
         ]
       }
     },
@@ -2346,7 +2365,8 @@
           "Intrinsic"
         ],
         "Generation technique": [
-          "LLM-based"
+          "LLM-based",
+          "Template-based"
         ],
         "Explained robot part": [
           "Perception",
@@ -2449,10 +2469,10 @@
           "BT"
         ],
         "Adaptation": [
-          "None"
+          "Yes, autonomous adaptation"
         ],
         "Goal of adaptation": [
-          "Not applicable"
+          "Self configuration"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -2475,7 +2495,7 @@
           "Underspecified"
         ],
         "Presentation modality": [
-          "Underspecified"
+          "Speech"
         ]
       },
       "Stakeholder (RQ4)": {
@@ -2494,12 +2514,12 @@
           "Evaluated"
         ],
         "Type of explainability evaluation": [
-          "User study, Quantitative"
+          "User study, Quantitative",
+          "User study, Qualitative"
         ],
         "Evaluation metrics": [
-          "Understandability",
           "Trust",
-          "Other: explanations were not rated as particularly justifying the robot\u2019s behaviors; why the robot behaved as it did; likeability; intelligence"
+          "Other: Qualtitativ: report moments that felt unnatural or striking; Quantitative: likeability, intelligence (vague in text: intentionality, understandability, surprisingness, and desirability)"
         ]
       }
     },
@@ -2562,13 +2582,14 @@
         ],
         "Control algorithm": [
           "Decision tree",
-          "Cognitive architecture"
+          "Cognitive architecture",
+          "DL-Based"
         ],
         "Adaptation": [
-          "None"
+          "Yes, autonomous adaptation"
         ],
         "Goal of adaptation": [
-          "Not applicable"
+          "Continuous learning"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -2600,7 +2621,7 @@
           "Discussion needed: human instruction; tell the robot what to do; this is not really reflected in any HRI type."
         ],
         "Motivation": [
-          "Underspecified"
+          "Transparency"
         ],
         "Stakeholder type": [
           "Underspecified"
@@ -2614,7 +2635,8 @@
           "Technical (Benchmark), Quantitative"
         ],
         "Evaluation metrics": [
-          "Not applicable"
+          "Not applicable",
+          "Other: Technical: Precision, Recall"
         ]
       }
     },
@@ -2686,7 +2708,7 @@
           "Yes, autonomous adaptation"
         ],
         "Goal of adaptation": [
-          "Discussion needed: idk what for autonomous trajectory adapation?"
+          "Self configuration"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -2735,7 +2757,8 @@
           "Technical (Benchmark), Quantitative"
         ],
         "Evaluation metrics": [
-          "Not applicable"
+          "Not applicable",
+          "Other: technical: success rate"
         ]
       }
     },
@@ -2839,7 +2862,7 @@
       },
       "Evaluation (RQ5)": {
         "State of explainability": [
-          "Pseudo-code"
+          "Implementation"
         ],
         "Type of explainability evaluation": [
           "None"
@@ -2966,7 +2989,8 @@
           "Technical (Benchmark), Qualitative"
         ],
         "Evaluation metrics": [
-          "Not applicable"
+          "Not applicable",
+          "Other: Technical: success rate (binary)"
         ]
       }
     },
