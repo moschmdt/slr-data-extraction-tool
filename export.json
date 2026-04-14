@@ -2081,8 +2081,8 @@
       "authors": "Pradip Pramanick; Silvia Rossi",
       "year": "2024"
     },
-    "excluded_from_full_text_review": true,
-    "exclusion_reason": "The focus is on finding coherent explanations, while interesting for the research area, this is not an explanation of SPA of a robot. Also include human expert explanations.",
+    "excluded_from_full_text_review": false,
+    "exclusion_reason": "",
     "responses": {
       "General information": {
         "Code available?": [
@@ -2128,7 +2128,7 @@
           "Not applicable"
         ],
         "Control algorithm": [
-          "Underspecified"
+          "Not applicable"
         ],
         "Adaptation": [
           "None"
@@ -2152,7 +2152,7 @@
           "Underspecified"
         ],
         "Planning level scope": [
-          "Underspecified"
+          "Discussion needed: See text passage"
         ],
         "Presentation modality": [
           "Visualization",
