@@ -1471,47 +1471,114 @@
       "authors": "Z.-Z. Guo; C.-R. Wang; X.-Z. Zhu; C.-J. Wu; B.-S. Deng; W. Yao",
       "year": "2025"
     },
-    "excluded_from_full_text_review": true,
-    "exclusion_reason": "They distill BT but never actually explain them; the only reference to the \"interpretable\" part is: \"This improvement stems from feature importance-based selection, enhancing model interpretability and efficiency.\" --> No main focus on explainability.",
+    "excluded_from_full_text_review": false,
+    "exclusion_reason": "",
     "responses": {
       "General information": {
-        "Code available?": [],
-        "Project status": [],
-        "License": [],
-        "Additional information": []
+        "Code available?": [
+          "no"
+        ],
+        "Project status": [
+          "Underspecified"
+        ],
+        "License": [
+          "Not applicable"
+        ],
+        "Additional information": [
+          "No additional information"
+        ]
       },
       "Target platform (RQ1)": {
-        "Deployment": [],
-        "Robotic device": [],
-        "Simulation environment": [],
-        "Domain": [],
-        "Use case": [],
-        "Location": [],
-        "Multi Agent System": []
+        "Deployment": [
+          "Other simulation"
+        ],
+        "Robotic device": [
+          "Underspecified"
+        ],
+        "Simulation environment": [
+          "Underspecified"
+        ],
+        "Domain": [
+          "Underspecified"
+        ],
+        "Use case": [
+          "Navigation"
+        ],
+        "Location": [
+          "Underspecified"
+        ],
+        "Multi Agent System": [
+          "Underspecified"
+        ]
       },
       "Software characteristics (RQ2)": {
-        "Middleware": [],
-        "Control algorithm": [],
-        "Adaptation": [],
-        "Goal of adaptation": []
+        "Middleware": [
+          "Underspecified"
+        ],
+        "Control algorithm": [
+          "BT"
+        ],
+        "Adaptation": [
+          "Yes, autonomous adaptation"
+        ],
+        "Goal of adaptation": [
+          "Self protection"
+        ]
       },
       "Explanation structure (RQ3)": {
-        "Intrinsic vs. post-hoc": [],
-        "Generation technique": [],
-        "Explained robot part": [],
-        "Explanatory question": [],
-        "Planning level scope": [],
-        "Presentation modality": []
+        "Intrinsic vs. post-hoc": [
+          "Intrinsic",
+          "Post-hoc"
+        ],
+        "Generation technique": [
+          "DL-based",
+          "Tree-based",
+          "Rule-based"
+        ],
+        "Explained robot part": [
+          "Behaviour"
+        ],
+        "Explanatory question": [
+          "Underspecified"
+        ],
+        "Planning level scope": [
+          "Sequence level"
+        ],
+        "Presentation modality": [
+          "Plot"
+        ]
       },
       "Stakeholder (RQ4)": {
-        "HRI Type": [],
-        "Motivation": [],
-        "Stakeholder type": []
+        "HRI Type": [
+          "Underspecified"
+        ],
+        "Motivation": [
+          "Trust (unspecified)",
+          "Debugging",
+          "Transparency"
+        ],
+        "Stakeholder type": [
+          "Domain expert"
+        ]
       },
       "Evaluation (RQ5)": {
-        "State of explainability": [],
-        "Type of explainability evaluation": [],
-        "Evaluation metrics": []
+        "State of explainability": [
+          "Evaluated"
+        ],
+        "Type of explainability evaluation": [
+          "Technical (Benchmark), Quantitative"
+        ],
+        "Evaluation metrics": [
+          "Not applicable"
+        ],
+        "Technical Evaluation Metrics": [
+          "Fidelity (accuracy)"
+        ]
+      }
+    },
+    "mandatory_texts": {
+      "Explanation structure (RQ3)": {
+        "Planning level scope": "They show specific instances of destilled BT."
       }
     }
   },
@@ -1617,7 +1684,8 @@
         ],
         "Evaluation metrics": [
           "Not applicable"
-        ]
+        ],
+        "Technical Evaluation Metrics": []
       }
     },
     "mandatory_texts": {
