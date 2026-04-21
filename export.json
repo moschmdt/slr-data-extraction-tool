@@ -3283,12 +3283,128 @@
         ],
         "Evaluation metrics": [
           "Not applicable"
+        ],
+        "Technical Evaluation Metrics": [
+          "Not applicable"
         ]
       }
     },
     "mandatory_texts": {
       "Explanation structure (RQ3)": {
         "Planning level scope": "\"human: Why Not move2 at 17 robot: Why move2 at 17 human: Selected at_waypoint,goal_move_to_location,safe_terrain, -> do(move2),-goal_move_to_location,-at_waypoint,+at_location,+goal_take_sample, at 16 robot: Why select at_waypoint,goal_move_to_location,safe_terrain, -> do(move2),-goal_move_to_location,-at_waypoint,+at_location,+goal_take_sample, at 16 human: +at_waypoint at time 14 and it remained so until at least 16 robot: I agree +at_waypoint between 14 and 16 human: +goal_move_to_location at time 11 and it remained so until at least 16 robot: I agree +goal_move_to_location between 11 and 16 human: +safe_terrain at time 6 and it remained so until at least 16 robot: -safe_terrain at time 15 and it remained so until at least 16 human: Why -safe_terrain at 15 robot: I perceived -safe_terrain at 15\"; \"human: Why Not inspect_wall at 14 robot: Why inspect_wall at 14 human: Selected wall_scheduled,daily_inspection, -> do(inspect_wall), at 13 robot: Selected barrels_scheduled,daily_inspection, -> do(inspect_barrels), at 13 human: wall_scheduled,daily_inspection, -> do(inspect_wall), has precedence in my plan library\""
+      }
+    }
+  },
+  "I4FADUXV": {
+    "paper": {
+      "title": "Design of hesitation gestures for nonverbal human-robot negotiation of conflicts",
+      "authors": "\"Moon, A Jung\"",
+      "year": "2021"
+    },
+    "excluded_from_full_text_review": false,
+    "exclusion_reason": "",
+    "responses": {
+      "General information": {
+        "Code available?": [
+          "no"
+        ],
+        "Project status": [
+          "Not applicable"
+        ],
+        "License": [
+          "Not applicable"
+        ],
+        "Additional information": [
+          "No additional information"
+        ]
+      },
+      "Target platform (RQ1)": {
+        "Deployment": [
+          "Real robot"
+        ],
+        "Robotic device": [
+          "Manipulator (unspecified) => Use if not further specified"
+        ],
+        "Simulation environment": [
+          "Not applicable"
+        ],
+        "Domain": [
+          "Underspecified"
+        ],
+        "Use case": [
+          "Collision avoidance"
+        ],
+        "Location": [
+          "Laboratory"
+        ],
+        "Multi Agent System": [
+          "No, i.e. one human - one robot"
+        ]
+      },
+      "Software characteristics (RQ2)": {
+        "Middleware": [
+          "ROS1"
+        ],
+        "Control algorithm": [
+          "Other: Linear Dynamical System (LDS)"
+        ],
+        "Adaptation": [
+          "Yes, autonomous adaptation"
+        ],
+        "Goal of adaptation": [
+          "Self protection"
+        ]
+      },
+      "Explanation structure (RQ3)": {
+        "Intrinsic vs. post-hoc": [
+          "Intrinsic"
+        ],
+        "Generation technique": [
+          "Other: Linear Dynamical System (LDS) first order differential equation for trajectory generation for expressive motion generation."
+        ],
+        "Explained robot part": [
+          "Perception"
+        ],
+        "Explanatory question": [
+          "Underspecified"
+        ],
+        "Planning level scope": [
+          "Sequence level"
+        ],
+        "Presentation modality": [
+          "Expressive motion"
+        ]
+      },
+      "Stakeholder (RQ4)": {
+        "HRI Type": [
+          "Collaboration"
+        ],
+        "Motivation": [
+          "Intent communication"
+        ],
+        "Stakeholder type": [
+          "Operator / End user (non-expert)"
+        ]
+      },
+      "Evaluation (RQ5)": {
+        "State of explainability": [
+          "Evaluated"
+        ],
+        "Type of explainability evaluation": [
+          "User study, Quantitative",
+          "User study, Qualitative"
+        ],
+        "Evaluation metrics": [
+          "Other: Hesitancy, Animacy and Anthropomorphism, Persistency, Dominance"
+        ],
+        "Technical Evaluation Metrics": [
+          "Not applicable"
+        ]
+      }
+    },
+    "mandatory_texts": {
+      "Explanation structure (RQ3)": {
+        "Planning level scope": "Trajectory manipulation for expressing hesitation to claim common space of interaction."
       }
     }
   }
