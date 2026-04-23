@@ -174,7 +174,7 @@
       },
       "Explanation structure (RQ3)": {
         "Intrinsic vs. post-hoc": [
-          "Underspecified"
+          "Intrinsic"
         ],
         "Generation technique": [
           "Tree-based"
@@ -537,7 +537,7 @@
       },
       "Explanation structure (RQ3)": {
         "Intrinsic vs. post-hoc": [
-          "Intrinsic"
+          "Underspecified"
         ],
         "Generation technique": [
           "NLG underspecified"
@@ -641,7 +641,7 @@
           "ROS1"
         ],
         "Control algorithm": [
-          "Underspecified"
+          "Motion planning algorithm"
         ],
         "Adaptation": [
           "Yes, with user involvement"
@@ -652,10 +652,10 @@
       },
       "Explanation structure (RQ3)": {
         "Intrinsic vs. post-hoc": [
-          "Underspecified"
+          "Intrinsic"
         ],
         "Generation technique": [
-          "Underspecified"
+          "Optimization Algorithm"
         ],
         "Explained robot part": [
           "Behaviour",
@@ -891,7 +891,7 @@
       },
       "Explanation structure (RQ3)": {
         "Intrinsic vs. post-hoc": [
-          "Underspecified"
+          "Post-hoc"
         ],
         "Generation technique": [
           "LLM-based",
@@ -1438,7 +1438,7 @@
           "ROS2"
         ],
         "Control algorithm": [
-          "Underspecified"
+          "Motion planning algorithm"
         ],
         "Adaptation": [
           "Yes, autonomous adaptation"
@@ -1961,7 +1961,7 @@
           "Underspecified"
         ],
         "Control algorithm": [
-          "Underspecified"
+          "Motion planning algorithm"
         ],
         "Adaptation": [
           "Yes, autonomous adaptation"
@@ -2492,7 +2492,8 @@
       },
       "Explanation structure (RQ3)": {
         "Intrinsic vs. post-hoc": [
-          "Intrinsic"
+          "Intrinsic",
+          "Post-hoc"
         ],
         "Generation technique": [
           "LLM-based",
@@ -3198,7 +3199,7 @@
           "Underspecified"
         ],
         "Control algorithm": [
-          "Underspecified"
+          "RL"
         ],
         "Adaptation": [
           "Yes, with user involvement"
@@ -3326,7 +3327,7 @@
           "Intrinsic"
         ],
         "Generation technique": [
-          "Underspecified"
+          "NLG underspecified"
         ],
         "Explained robot part": [
           "Perception",
