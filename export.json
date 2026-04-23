@@ -600,7 +600,8 @@
           "Robot simulation"
         ],
         "Robotic device": [
-          "Discussion needed: Need multi selection here: mobile robot (husky) for user study and manipulator for performance evaluatoin"
+          "Mobile robot (unspecified) => Use if not further specified",
+          "Manipulator (unspecified) => Use if not further specified"
         ],
         "Simulation environment": [
           "Gazebo"
@@ -679,7 +680,8 @@
           "User behavior (performance)",
           "Trust",
           "Cognitive load"
-        ]
+        ],
+        "Technical Evaluation Metrics": []
       }
     },
     "mandatory_texts": {
@@ -966,8 +968,7 @@
           "Underspecified"
         ],
         "Multi Agent System": [
-          "No, i.e. one human - one robot",
-          "Discussion needed: \"alert the nursing staff\" --> one human multiple humans?"
+          "No, i.e. one human - one robot"
         ]
       },
       "Software characteristics (RQ2)": {
@@ -1028,7 +1029,8 @@
         "Evaluation metrics": [
           "Not applicable",
           "Other: Technical: prompt and response token size"
-        ]
+        ],
+        "Technical Evaluation Metrics": []
       }
     },
     "mandatory_texts": {
