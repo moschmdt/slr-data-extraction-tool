@@ -64,7 +64,7 @@
           "Pre-hoc"
         ],
         "Generation technique": [
-          "Other: sparse logistic regression model"
+          "ML-based"
         ],
         "Explained robot part": [
           "Behaviour"
@@ -99,6 +99,10 @@
         ],
         "Type of explainability evaluation": [
           "Technical (Benchmark), Quantitative"
+        ],
+        "Technical Evaluation Metrics": [
+          "Fidelity",
+          "Desired Subjective Properties"
         ]
       }
     },
@@ -159,7 +163,7 @@
           "ROS1"
         ],
         "Control algorithm": [
-          "Other: Rule-based, self written architecture. "
+          "Underspecified"
         ],
         "Adaptation": [
           "None"
@@ -208,10 +212,15 @@
         ],
         "Evaluation metrics": [
           "Usability",
-          "Other: Godspeed (Anthropomorphism, Likability, Perceived Intelligence), number of wrong commands by user, task success, structural knowledge and process knowledge"
+          "Competence",
+          "User expectation/ preference",
+          "User behavior (performance)"
         ],
         "Type of explainability evaluation": [
           "User study, Quantitative"
+        ],
+        "Technical Evaluation Metrics": [
+          "Not applicable"
         ]
       }
     },
@@ -253,7 +262,7 @@
           "Mobile robot (unspecified) => Use if not further specified"
         ],
         "Simulation environment": [
-          "Other: Gazebo, specifically Clearpath Husky Robot simulation and the Vizanti Visualizer ROS2 packages"
+          "Gazebo"
         ],
         "Domain": [
           "Underspecified"
@@ -271,7 +280,7 @@
       "Software characteristics (RQ2)": {
         "Middleware": [
           "ROS2",
-          "Other: MQTT"
+          "General-Purpose Communication Protocols"
         ],
         "Control algorithm": [
           "BDI Agent"
@@ -323,6 +332,9 @@
         ],
         "Type of explainability evaluation": [
           "None"
+        ],
+        "Technical Evaluation Metrics": [
+          "Not applicable"
         ]
       }
     },
@@ -377,7 +389,7 @@
           "Medical and healthcare"
         ],
         "Use case": [
-          "Other: recommender system"
+          "Other interaction"
         ],
         "Location": [
           "Underspecified"
@@ -428,7 +440,7 @@
         "Motivation": [
           "Trust (increase)",
           "Mental model alignment",
-          "Other: user engagement, adherence to healthy behavior (food)"
+          "Transparency"
         ],
         "Stakeholder type": [
           "Operator / End user (non-expert)"
@@ -439,10 +451,13 @@
           "Pseudo-code"
         ],
         "Evaluation metrics": [
-          "Underspecified"
+          "Not applicable"
         ],
         "Type of explainability evaluation": [
           "None"
+        ],
+        "Technical Evaluation Metrics": [
+          "Not applicable"
         ]
       }
     },
@@ -508,16 +523,16 @@
       },
       "Software characteristics (RQ2)": {
         "Middleware": [
-          "Other: gRPC"
+          "General-Purpose Communication Protocols"
         ],
         "Control algorithm": [
           "Underspecified"
         ],
         "Adaptation": [
-          "Discussion needed: example scenario for a single asset [under water drone] could then be for it: to be launched; to transit to a survey area while avoiding an exclusion zone;"
+          "Yes, with user involvement"
         ],
         "Goal of adaptation": [
-          "Discussion needed: example scenario for a single asset [under water drone] could then be for it: to be launched; to transit to a survey area while avoiding an exclusion zone;"
+          "Self configuration"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -525,7 +540,7 @@
           "Intrinsic"
         ],
         "Generation technique": [
-          "Discussion needed: MIRIAM (basead on semantic represetnation of user input and data retrieval from database)"
+          "NLG underspecified"
         ],
         "Explained robot part": [
           "Behaviour"
@@ -546,8 +561,7 @@
           "Underspecified"
         ],
         "Motivation": [
-          "User understanding",
-          "Other: awareness"
+          "User understanding"
         ],
         "Stakeholder type": [
           "Operator / End user (non-expert)"
@@ -561,7 +575,10 @@
           "None"
         ],
         "Evaluation metrics": [
-          "Other: understandability, awareness"
+          "Not applicable"
+        ],
+        "Technical Evaluation Metrics": [
+          "Not applicable"
         ]
       }
     },
@@ -681,7 +698,9 @@
           "Trust",
           "Cognitive load"
         ],
-        "Technical Evaluation Metrics": []
+        "Technical Evaluation Metrics": [
+          "Cost & Efficiency"
+        ]
       }
     },
     "mandatory_texts": {
@@ -741,13 +760,13 @@
           "Underspecified"
         ],
         "Control algorithm": [
-          "Other: Robotic Foundation Model (RFM)"
+          "Foundation model, including VLA/VLM"
         ],
         "Adaptation": [
-          "Discussion needed: @Andi: RFM are self adaptive by design I guess. But wanted to confirm with you. They"
+          "Yes, autonomous adaptation"
         ],
         "Goal of adaptation": [
-          "Discussion needed: see adapation"
+          "Underspecified"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -755,10 +774,10 @@
           "Post-hoc"
         ],
         "Generation technique": [
-          "DL-based"
+          "Gradient-based"
         ],
         "Explained robot part": [
-          "Discussion needed: Are heatmaps from a third person perspective behavior explanations? (See figures)"
+          "Perception"
         ],
         "Explanatory question": [
           "Underspecified"
@@ -786,10 +805,13 @@
           "Implementation"
         ],
         "Type of explainability evaluation": [
-          "Discussion needed: They evaluate a robotic foundation model based on heatmaps claiming benchmarks alone are not sufficient. So this is not a benchmark in the traditional sense. Maybe a qualitative technical evaluation?"
+          "Technical (Benchmark), Qualitative"
         ],
         "Evaluation metrics": [
           "Not applicable"
+        ],
+        "Technical Evaluation Metrics": [
+          "Fidelity"
         ]
       }
     },
@@ -850,7 +872,7 @@
           "Laboratory"
         ],
         "Multi Agent System": [
-          "Discussion needed: this is a single human single robot but the agent controlling the robot consits of several agents (speech agent, llm agent, human behavior agent, ...)"
+          "No, i.e. one human - one robot"
         ]
       },
       "Software characteristics (RQ2)": {
@@ -912,7 +934,10 @@
         ],
         "Evaluation metrics": [
           "Usability",
-          "Other: robot data usage for decision making,why/ why-not, how, how to (explaination dimensions)"
+          "Understandability"
+        ],
+        "Technical Evaluation Metrics": [
+          "Not applicable"
         ]
       }
     },
@@ -962,7 +987,7 @@
         ],
         "Use case": [
           "Manipulation",
-          "Discussion needed: \"robot is tasked to alert the nursing staff in case of hazardous situations for the patients, e.g., a fallen patient on the floor, as well as for internal failures\" -> Insepction or S&R?"
+          "Other interaction"
         ],
         "Location": [
           "Underspecified"
@@ -1013,7 +1038,7 @@
           "Coexistence"
         ],
         "Motivation": [
-          "Discussion needed: personalization of explanations"
+          "Mental model alignment"
         ],
         "Stakeholder type": [
           "Operator / End user (non-expert)"
@@ -1027,10 +1052,11 @@
           "Technical (Benchmark), Quantitative"
         ],
         "Evaluation metrics": [
-          "Not applicable",
-          "Other: Technical: prompt and response token size"
+          "Not applicable"
         ],
-        "Technical Evaluation Metrics": []
+        "Technical Evaluation Metrics": [
+          "Cost & Efficiency"
+        ]
       }
     },
     "mandatory_texts": {
@@ -1087,7 +1113,7 @@
       },
       "Software characteristics (RQ2)": {
         "Middleware": [
-          "Other: python server via socket communication"
+          "General-Purpose Communication Protocols"
         ],
         "Control algorithm": [
           "RL"
@@ -1104,7 +1130,7 @@
           "Post-hoc"
         ],
         "Generation technique": [
-          "DL-based"
+          "Gradient-based"
         ],
         "Explained robot part": [
           "Perception"
@@ -1143,7 +1169,10 @@
         "Evaluation metrics": [
           "Understandability",
           "Trust",
-          "Other: plausability, SIPA scale"
+          "User expectation/ preference"
+        ],
+        "Technical Evaluation Metrics": [
+          "Not applicable"
         ]
       }
     },
@@ -1231,7 +1260,8 @@
       "Evaluation (RQ5)": {
         "State of explainability": [],
         "Type of explainability evaluation": [],
-        "Evaluation metrics": []
+        "Evaluation metrics": [],
+        "Technical Evaluation Metrics": []
       }
     }
   },
@@ -1334,7 +1364,11 @@
           "User study, Quantitative"
         ],
         "Evaluation metrics": [
-          "Other: Desire for explanation, Perceived surprise, Usefullnes"
+          "Satisfaction",
+          "User expectation/ preference"
+        ],
+        "Technical Evaluation Metrics": [
+          "Not applicable"
         ]
       }
     },
@@ -1415,12 +1449,13 @@
       },
       "Explanation structure (RQ3)": {
         "Intrinsic vs. post-hoc": [
-          "Post-hoc"
+          "Post-hoc",
+          "Intrinsic"
         ],
         "Generation technique": [
           "LLM-based",
-          "DL-based",
-          "Other: vision language foundation models, Bootstrapping language-image pre-training for unified vision-language understanding and generation (BLIP), \"The robot is equipped with a modular explainability model implemented as four ROS2 nodes, 1) Camera Node, 2) BLIP Node, 3) Heatmap Node, and 4) LLM node\""
+          "Foundation Models (VLA/ VLM/ ..)",
+          "Gradient-based"
         ],
         "Explained robot part": [
           "Perception",
@@ -1457,7 +1492,11 @@
         "Evaluation metrics": [
           "Trust",
           "Understandability",
-          "Other: see TABLE II, missing in this answer is mapping of \"The information provided by the robot was clear and useful\" and \"I felt more in control when explanations were given\""
+          "Control",
+          "Satisfaction"
+        ],
+        "Technical Evaluation Metrics": [
+          "Not applicable"
         ]
       }
     },
@@ -1622,7 +1661,7 @@
           "Consumer robot"
         ],
         "Use case": [
-          "Other: Houshold chores"
+          "Manipulation"
         ],
         "Location": [
           "Not applicable"
@@ -1639,10 +1678,10 @@
           "Underspecified"
         ],
         "Adaptation": [
-          "Yes, autonomous adaptation"
+          "None"
         ],
         "Goal of adaptation": [
-          "Discussion needed: The system generates actions based on perceived social situations and is expected to adapt it's plan accordingly -> Self configuration? The paper also works a lot on a dataset, and no actual robot. Is this even applicable in this situation?"
+          "Not applicable"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -1681,13 +1720,14 @@
           "Evaluated"
         ],
         "Type of explainability evaluation": [
-          "Technical (Benchmark), Quantitative",
-          "Discussion needed: \"To better understand the quantitative results of GRACE, we [the authors] qualitatively assessed the explanations it generated as shown in Figure 3.\" This is neither user study nor a technical qualitative analysis?"
+          "Technical (Benchmark), Quantitative"
         ],
         "Evaluation metrics": [
           "Not applicable"
         ],
-        "Technical Evaluation Metrics": []
+        "Technical Evaluation Metrics": [
+          "Fidelity"
+        ]
       }
     },
     "mandatory_texts": {
@@ -1727,7 +1767,7 @@
           "Manipulator (unspecified) => Use if not further specified"
         ],
         "Simulation environment": [
-          "Other: robosuite"
+          "Robosuite"
         ],
         "Domain": [
           "Consumer robot"
@@ -1747,10 +1787,10 @@
           "Underspecified"
         ],
         "Control algorithm": [
-          "Other: Large Multimodal Models (LMMs), VLA model"
+          "Foundation model, including VLA/VLM"
         ],
         "Adaptation": [
-          "Underspecified"
+          "Yes, autonomous adaptation"
         ],
         "Goal of adaptation": [
           "Underspecified"
@@ -1761,7 +1801,8 @@
           "Post-hoc"
         ],
         "Generation technique": [
-          "LLM-based"
+          "LLM-based",
+          "Template-based"
         ],
         "Explained robot part": [
           "Behaviour",
@@ -1803,7 +1844,11 @@
         ],
         "Evaluation metrics": [
           "Accuracy of the explanation",
-          "Other: Clarity: Is the explanation easy to understand?; Usefullness; Techncial: BLEU-4, ROUGE-L (F1)"
+          "Understandability",
+          "User expectation/ preference"
+        ],
+        "Technical Evaluation Metrics": [
+          "Desired Subjective Properties"
         ]
       }
     },
@@ -1859,7 +1904,8 @@
       "Evaluation (RQ5)": {
         "State of explainability": [],
         "Type of explainability evaluation": [],
-        "Evaluation metrics": []
+        "Evaluation metrics": [],
+        "Technical Evaluation Metrics": []
       }
     }
   },
@@ -1895,7 +1941,7 @@
           "Mobile robot (unspecified) => Use if not further specified"
         ],
         "Simulation environment": [
-          "Other: matlab"
+          "Matlab"
         ],
         "Domain": [
           "Consumer robot"
@@ -1929,7 +1975,8 @@
           "Intrinsic"
         ],
         "Generation technique": [
-          "Tree-based"
+          "Tree-based",
+          "Counterfactual/ contrastive"
         ],
         "Explained robot part": [
           "Perception"
@@ -1941,7 +1988,7 @@
           "Action level"
         ],
         "Presentation modality": [
-          "Underspecified"
+          "Plot"
         ]
       },
       "Stakeholder (RQ4)": {
@@ -1957,14 +2004,16 @@
       },
       "Evaluation (RQ5)": {
         "State of explainability": [
-          "Evaluated"
+          "Implementation"
         ],
         "Type of explainability evaluation": [
-          "Technical (Benchmark), Quantitative"
+          "None"
         ],
         "Evaluation metrics": [
-          "Not applicable",
-          "Other: Technical: success rate"
+          "Not applicable"
+        ],
+        "Technical Evaluation Metrics": [
+          "Not applicable"
         ]
       }
     },
@@ -2017,7 +2066,7 @@
           "Underspecified"
         ],
         "Multi Agent System": [
-          "Discussion needed: multiple robots, no humans"
+          "One human - multiple robots"
         ]
       },
       "Software characteristics (RQ2)": {
@@ -2025,7 +2074,7 @@
           "Underspecified"
         ],
         "Control algorithm": [
-          "Other: Rapidly-exploring random trees: A new tool for path planning (RRT) and Path planning in expansive configuration spaces (EST)"
+          "Motion planning algorithm"
         ],
         "Adaptation": [
           "Yes, autonomous adaptation"
@@ -2074,8 +2123,10 @@
           "Technical (Benchmark), Quantitative"
         ],
         "Evaluation metrics": [
-          "Not applicable",
-          "Other: Technical: # Solns. Found (%), Runtime (s),  Runtime Success (s),  Ave. Cost,  Segment  Time (s), States added"
+          "Not applicable"
+        ],
+        "Technical Evaluation Metrics": [
+          "Cost & Efficiency"
         ]
       }
     },
@@ -2141,7 +2192,8 @@
       "Evaluation (RQ5)": {
         "State of explainability": [],
         "Type of explainability evaluation": [],
-        "Evaluation metrics": []
+        "Evaluation metrics": [],
+        "Technical Evaluation Metrics": []
       }
     }
   },
@@ -2177,7 +2229,7 @@
           "Underspecified"
         ],
         "Simulation environment": [
-          "Other: ai2thor"
+          "Ai2thor"
         ],
         "Domain": [
           "Consumer robot"
@@ -2222,7 +2274,8 @@
           "Underspecified"
         ],
         "Planning level scope": [
-          "Discussion needed: See text passage"
+          "Sequence level",
+          "Action level"
         ],
         "Presentation modality": [
           "Visualization",
@@ -2248,8 +2301,10 @@
           "Technical (Benchmark), Quantitative"
         ],
         "Evaluation metrics": [
-          "Not applicable",
-          "Other: Technical: coherence of multiple explanations by bert models"
+          "Not applicable"
+        ],
+        "Technical Evaluation Metrics": [
+          "Desired Subjective Properties"
         ]
       }
     },
@@ -2291,13 +2346,13 @@
           "Mobile manipulator"
         ],
         "Simulation environment": [
-          "Other: ai2thor"
+          "Ai2thor"
         ],
         "Domain": [
           "Consumer robot"
         ],
         "Use case": [
-          "Other: Failure handling"
+          "Failure handling"
         ],
         "Location": [
           "Field"
@@ -2362,7 +2417,10 @@
           "User study, Quantitative"
         ],
         "Evaluation metrics": [
-          "Other: Failure Identification (FId): The ability to accurately select the correct cause(s) of failure in a scene., Solution Identification (SId): The ability to accurately select the actions needed to remedy the failure in a scene."
+          "Accuracy of the explanation"
+        ],
+        "Technical Evaluation Metrics": [
+          "Not applicable"
         ]
       }
     },
@@ -2461,7 +2519,7 @@
         ],
         "Motivation": [
           "Failure handling",
-          "Discussion needed: question answering"
+          "Mental model alignment"
         ],
         "Stakeholder type": [
           "Underspecified"
@@ -2475,6 +2533,9 @@
           "None"
         ],
         "Evaluation metrics": [
+          "Not applicable"
+        ],
+        "Technical Evaluation Metrics": [
           "Not applicable"
         ]
       }
@@ -2534,7 +2595,7 @@
       "Software characteristics (RQ2)": {
         "Middleware": [
           "ROS1",
-          "Other: MQTT"
+          "General-Purpose Communication Protocols"
         ],
         "Control algorithm": [
           "BDI Agent",
@@ -2552,10 +2613,10 @@
           "Intrinsic"
         ],
         "Generation technique": [
-          "Other: natural language generation (NLG)"
+          "NLG underspecified"
         ],
         "Explained robot part": [
-          "Underspecified"
+          "Behaviour"
         ],
         "Explanatory question": [
           "Why",
@@ -2571,7 +2632,7 @@
       },
       "Stakeholder (RQ4)": {
         "HRI Type": [
-          "Discussion needed: Human is required to question the robot to find the robots goal."
+          "Collaboration"
         ],
         "Motivation": [
           "Mental model alignment"
@@ -2590,7 +2651,13 @@
         ],
         "Evaluation metrics": [
           "Trust",
-          "Other: Qualtitativ: report moments that felt unnatural or striking; Quantitative: likeability, intelligence (vague in text: intentionality, understandability, surprisingness, and desirability)"
+          "Competence",
+          "Satisfaction",
+          "Understandability",
+          "User expectation/ preference"
+        ],
+        "Technical Evaluation Metrics": [
+          "Not applicable"
         ]
       }
     },
@@ -2689,7 +2756,7 @@
       },
       "Stakeholder (RQ4)": {
         "HRI Type": [
-          "Discussion needed: human instruction; tell the robot what to do; this is not really reflected in any HRI type."
+          "Human supervision"
         ],
         "Motivation": [
           "Transparency"
@@ -2706,8 +2773,10 @@
           "Technical (Benchmark), Quantitative"
         ],
         "Evaluation metrics": [
-          "Not applicable",
-          "Other: Technical: Precision, Recall"
+          "Not applicable"
+        ],
+        "Technical Evaluation Metrics": [
+          "Fidelity"
         ]
       }
     },
@@ -2750,14 +2819,13 @@
         ],
         "Simulation environment": [
           "Gazebo",
-          "Other: AirSim"
+          "AirSim"
         ],
         "Domain": [
           "Underspecified"
         ],
         "Use case": [
-          "Collision avoidance",
-          "Navigation"
+          "Collision avoidance"
         ],
         "Location": [
           "Laboratory",
@@ -2822,14 +2890,16 @@
       },
       "Evaluation (RQ5)": {
         "State of explainability": [
-          "Evaluated"
+          "Implementation"
         ],
         "Type of explainability evaluation": [
-          "Technical (Benchmark), Quantitative"
+          "None"
         ],
         "Evaluation metrics": [
-          "Not applicable",
-          "Other: technical: success rate"
+          "Not applicable"
+        ],
+        "Technical Evaluation Metrics": [
+          "Not applicable"
         ]
       }
     },
@@ -2893,10 +2963,10 @@
           "Cognitive architecture"
         ],
         "Adaptation": [
-          "Discussion needed: Robot rejects human request @Andi: Do you want this?"
+          "None"
         ],
         "Goal of adaptation": [
-          "Discussion needed: see adapation"
+          "Not applicable"
         ]
       },
       "Explanation structure (RQ3)": {
@@ -2904,7 +2974,7 @@
           "Intrinsic"
         ],
         "Generation technique": [
-          "Other: Natural language generation (NLG)"
+          "NLG underspecified"
         ],
         "Explained robot part": [
           "Behaviour"
@@ -2939,6 +3009,9 @@
           "None"
         ],
         "Evaluation metrics": [
+          "Not applicable"
+        ],
+        "Technical Evaluation Metrics": [
           "Not applicable"
         ]
       }
@@ -3060,8 +3133,10 @@
           "Technical (Benchmark), Qualitative"
         ],
         "Evaluation metrics": [
-          "Not applicable",
-          "Other: Technical: success rate (binary)"
+          "Not applicable"
+        ],
+        "Technical Evaluation Metrics": [
+          "Desired Subjective Properties"
         ]
       }
     },
@@ -3174,6 +3249,9 @@
           "Trust",
           "Satisfaction",
           "User behavior (performance)"
+        ],
+        "Technical Evaluation Metrics": [
+          "Not applicable"
         ]
       }
     },
@@ -3270,7 +3348,8 @@
         ],
         "Motivation": [
           "Mental model alignment",
-          "Other: facilitate an understanding of program behaviour"
+          "User understanding",
+          "Debugging"
         ],
         "Stakeholder type": [
           "Underspecified"
