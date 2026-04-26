@@ -2310,7 +2310,7 @@
     },
     "mandatory_texts": {
       "Explanation structure (RQ3)": {
-        "Planning level scope": "present a multimodal explanation Em for \u03c0. Em consists of a pair of mutually coherent explanations, a textual explanation Et and a graphical explanation Eg = {E\u03c0 \u222aEOi }, which is overlaid on the corresponding ego-view image Ii at time step i. Each Eg has two components, an explanation of action execution, i.e., the plan until the failure observation E\u03c0, and a sub-graph of the scene graph at i, EOi . To obtain Em, we first obtain a base Et and Eg independently, by reasoning over \u03c0 and O"
+        "Planning level scope": "present a multimodal explanation Em for \u03c0. Em consists of a pair of mutually coherent explanations, a textual explanation Et and a graphical explanation Eg = {E\u03c0 \u222aEOi }, which is overlaid on the corresponding ego-view image Ii at time step i. Each Eg has two components, an explanation of action execution, i.e., the plan until the failure observation E\u03c0, and a sub-graph of the scene graph at i, EOi . To obtain Em, we first obtain a base Et and Eg independently, by reasoning over \u03c0 and O; The robot failed to complete [TASK] because it was unable to perform [ACTION] at [TIME], where the [*] slots are filled by information for a particular task failure."
       }
     }
   },
