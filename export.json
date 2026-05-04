@@ -3428,7 +3428,7 @@
           "ROS1"
         ],
         "Control algorithm": [
-          "Other: Linear Dynamical System (LDS)"
+          "Motion planning algorithm"
         ],
         "Adaptation": [
           "Yes, autonomous adaptation"
@@ -3477,7 +3477,9 @@
           "User study, Qualitative"
         ],
         "Evaluation metrics": [
-          "Other: Hesitancy, Animacy and Anthropomorphism, Persistency, Dominance"
+          "User expectation/ preference",
+          "Satisfaction",
+          "Competence"
         ],
         "Technical Evaluation Metrics": [
           "Not applicable"
